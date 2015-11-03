@@ -14,7 +14,7 @@
 #define PROTOCOL_TYPE SOCK_STREAM
 //#define PROTOCOL_TYPE SOCK_DGRAM
 
-#include "defines.h"
+#include "cdefines.h"
 
 /**
  *

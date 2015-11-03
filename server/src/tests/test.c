@@ -5,12 +5,14 @@
  *      Author: strikles
  */
 
-#include "test.h"
-
-#include <defines.h>
 #include <string.h>
 #include <unity.h>
-#include <xml.h>
+
+#include "cdefines.h"
+#include "csensors.h"
+#include "cxml.h"
+
+#include "test.h"
 
 int retrieve_all_test()
 {

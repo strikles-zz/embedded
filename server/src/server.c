@@ -8,13 +8,10 @@
  * @date 3/11/2015
  */
 
-#include <defines.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-#define SRV_PORT 6423
-#define TEST
 
 #include <netdb.h>
 #include <arpa/inet.h>
@@ -27,10 +24,13 @@
 #include <time.h>
 #include <unistd.h>
 
-#include "net.h"
-#include "sensors.h"
-#include "xml.h"
+#include "cdefines.h"
+#include "cnet.h"
+#include "csensors.h"
+#include "cxml.h"
 #include "server.h"
+
+#define TEST
 
 #ifdef TEST
 #include "tests/test.h"

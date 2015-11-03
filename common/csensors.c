@@ -8,12 +8,13 @@
  * @date 3/11/2015
  */
 
-#include <defines.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "sensors.h"
+
+#include "cdefines.h"
+#include "csensors.h"
 
 volatile Reading_t readings[max_sensors];
 

@@ -8,15 +8,16 @@
  * @date 3/11/2015
  */
 
-#include <defines.h>
 #include <ezxml.h>
-#include <sensors.h>
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "xml.h"
+
+#include "cdefines.h"
+#include "csensors.h"
+#include "cxml.h"
 
 extern volatile Reading_t readings[max_sensors];
 

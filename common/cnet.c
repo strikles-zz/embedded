@@ -9,13 +9,14 @@
  */
 
 #include <arpa/inet.h>
-#include <defines.h>
 #include <netinet/in.h>
 #include <stdio.h>
 #include <string.h>
 #include <sys/socket.h>
 #include <unistd.h>
-#include "net.h"
+
+#include "cdefines.h"
+#include "cnet.h"
 
 /**
  * Read from Socket

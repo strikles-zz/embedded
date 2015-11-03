@@ -11,9 +11,10 @@
 #ifndef XML_H_
 #define XML_H_
 
-#include <defines.h>
 #include <stddef.h>
 #include <stdint.h>
+
+#include "cdefines.h"
 
 /**
  * Builds XML

@@ -8,20 +8,20 @@
  * @date 3/11/2015
  */
 
-#include "client.h"
-
 #include <arpa/inet.h>
-#include <defines.h>
-#include <net.h>
 #include <netinet/in.h>
-#include <sensors.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/socket.h>
 #include <time.h>
 #include <unistd.h>
-#include <xml.h>
+
+#include "cdefines.h"
+#include "client.h"
+#include "cnet.h"
+#include "csensors.h"
+#include "cxml.h"
 
 #ifdef TEST
 #include "test.h"

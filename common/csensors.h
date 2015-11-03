@@ -10,8 +10,9 @@
 #ifndef SENSORS_H_
 #define SENSORS_H_
 
-#include <defines.h>
 #include <stdint.h>
+
+#include "cdefines.h"
 
 /**
  * helper - gets a measurement

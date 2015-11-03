@@ -8,7 +8,7 @@
  * @date 3/11/2015
  */
 
-#include "defines.h"
+#include "cdefines.h"
 
 const char const* request_str[] =
 {

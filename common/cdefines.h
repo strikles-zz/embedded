@@ -68,9 +68,9 @@ typedef enum
  */
 typedef struct
 {
-    int value;
-    int elapsed;
-    int interval;
+  int value;
+  int elapsed;
+  int interval;
 
 } Reading_t;
 
