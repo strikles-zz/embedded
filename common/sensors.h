@@ -1,17 +1,17 @@
 /**
-* @file sensors.h
-* @brief mock sensors
-* common mock sensors definitions
-*
-* @author Claudio Neto
-*
-* @date 3/11/2015
-*/
+ * @file sensors.h
+ * @brief mock sensors
+ * common mock sensors definitions
+ *
+ * @author Claudio Neto
+ *
+ * @date 3/11/2015
+ */
 #ifndef SENSORS_H_
 #define SENSORS_H_
 
-#include "defines.h"
-
+#include <defines.h>
+#include <stdint.h>
 
 /**
  * helper - gets a measurement

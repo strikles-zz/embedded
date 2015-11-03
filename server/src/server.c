@@ -1,12 +1,17 @@
 /**
-* @file server.c
-* @brief server
-* server prototypes
-*
-* @author Claudio Neto
-*
-* @date 3/11/2015
-*/
+ * @file server.c
+ * @brief server
+ * server prototypes
+ *
+ * @author Claudio Neto
+ *
+ * @date 3/11/2015
+ */
+
+#include <defines.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define SRV_PORT 6423
 #define TEST
@@ -33,78 +38,77 @@
 
 int socket_desc;
 
-int main(int argc , char *argv[])
+int main(int argc, char *argv[])
 {
-    int client_sock, c, invalid_status = 0;
-    struct sockaddr_in server, client;
+  int client_sock, c, invalid_status = 0;
+  struct sockaddr_in server, client;
 
-	srand(time(NULL));
-	#ifdef TEST
-	xml_test();
-	#endif
+  srand (time(NULL));
 
-    // shutdown signal
-    struct sigaction sigIntHandler;
-	// prepare for shutdowncb
-	// only sigint ? sigstp + sigquit
-    sigIntHandler.sa_handler = shutdownHandler;
-    sigemptyset(&sigIntHandler.sa_mask);
-    sigIntHandler.sa_flags = 0;
-    sigaction(SIGINT, &sigIntHandler, NULL);
+  struct sigaction  sigIntHandler;
 
-	// load last know configuration values
-	readConfig();
+  // prepare for shutdowncb
+  // only sigint ? sigstp + sigquit
+  sigIntHandler.sa_handler = shutdownHandler;
+  sigemptyset(&sigIntHandler.sa_mask);
+  sigIntHandler.sa_flags = 0;
+  sigaction(SIGINT, &sigIntHandler, NULL);
 
-    //Create socket
-	if((socket_desc = socket(AF_INET , PROTOCOL_TYPE , 0)) == -1)
+  // load last know configuration values
+  readConfig();
+
+  //Create socket
+  if((socket_desc = socket(AF_INET, PROTOCOL_TYPE, 0)) == -1)
+  {
+    perror("Could not create socket");
+    return 1;
+  }
+
+  //Prepare the sockaddr_in structure
+  bzero(&server, sizeof server);
+  server.sin_family = AF_INET;
+  server.sin_addr.s_addr = INADDR_ANY;
+  server.sin_port = htons(SRV_PORT);
+
+  //Bind
+  if(bind(socket_desc, (struct sockaddr *) &server, sizeof(server)) < 0)
+  {
+    //print the error message
+    perror("ERROR: bind failed");
+    return 1;
+  }
+
+  //Listen
+  listen(socket_desc, 3);
+
+  //Accept and incoming connection
+  puts("Waiting for incoming connections...");
+  c = sizeof(struct sockaddr_in);
+  pthread_t thread_id;
+  while((client_sock = accept(socket_desc, (struct sockaddr *) &client,
+      (socklen_t*) &c)))
+  {
+    puts("Connection accepted");
+    if(pthread_create(&thread_id, NULL, connection_handler,
+        (void*) &client_sock) < 0)
     {
-        perror("Could not create socket");
-        return 1;
+      perror("could not create thread");
+      invalid_status = 1;
+      break;
     }
 
-    //Prepare the sockaddr_in structure
-    bzero(&server, sizeof server);
-    server.sin_family = AF_INET;
-    server.sin_addr.s_addr = INADDR_ANY;
-    server.sin_port = htons(SRV_PORT);
+    // pthread_exit callback ?
+    // pthread_join( thread_id , NULL);
+    puts("Handler assigned");
+  }
 
-    //Bind
-    if(bind(socket_desc,(struct sockaddr *)&server, sizeof(server)) < 0)
-    {
-        //print the error message
-        perror("ERROR: bind failed");
-        return 1;
-    }
+  if(client_sock < 0)
+  {
+    perror("accept failed");
+    invalid_status = 1;
+  }
 
-    //Listen
-    listen(socket_desc , 3);
-
-    //Accept and incoming connection
-    puts("Waiting for incoming connections...");
-    c = sizeof(struct sockaddr_in);
-	pthread_t thread_id;
-    while((client_sock = accept(socket_desc, (struct sockaddr *)&client, (socklen_t*)&c)))
-    {
-        puts("Connection accepted");
-        if(pthread_create(&thread_id, NULL, connection_handler, (void*) &client_sock) < 0)
-        {
-            perror("could not create thread");
-            invalid_status = 1;
-            break;
-        }
-
-        // pthread_exit callback ?
-        // pthread_join( thread_id , NULL);
-        puts("Handler assigned");
-    }
-
-    if(client_sock < 0)
-    {
-        perror("accept failed");
-        invalid_status = 1;
-    }
-
-    return invalid_status;
+  return invalid_status;
 }
 
 /*
@@ -112,55 +116,55 @@ int main(int argc , char *argv[])
  * */
 void *connection_handler(void *socket_desc)
 {
-	// buffers
-	char recvline[MAX_MSG_LEN];
-	char sendline[MAX_MSG_LEN];
-    // socket fd
-    int sock = *(int*) socket_desc;
-    // socket status
-    int read_size = 0, write_size = 0;
-	// xml reply status
-	int invalid_response = 0;
+  // buffers
+  char recvline[MAX_MSG_LEN];
+  char sendline[MAX_MSG_LEN];
+  // socket fd
+  int sock = *(int*) socket_desc;
+  // socket status
+  int read_size = 0, write_size = 0;
+  // xml reply status
+  int invalid_response = 0;
 
-	int counter = 0;
-	while(1)
-	{
-		counter++;
-		printf("%d\n", counter);
+  int counter = 0;
+  while(1)
+  {
+    counter++;
+    printf("%d\n", counter);
 
-		// zero buffers
-		bzero(recvline, sizeof recvline);
-		bzero(sendline, sizeof sendline);
+    // zero buffers
+    bzero(recvline, sizeof recvline);
+    bzero(sendline, sizeof sendline);
 
-    	// read client msg
-        if((read_size = readSocket(sock, recvline)) == -1)
-        {
-        	perror("ERROR: readSocket");
-        	break;
-        }
+    // read client msg
+    if((read_size = readSocket(sock, recvline)) == -1)
+    {
+      perror("ERROR: readSocket");
+      break;
+    }
 
-		// build XML string response
-		if((invalid_response = buildReplyXML(recvline, sendline, read_size)))
-		{
-			perror("ERROR: invalid response");
-			break;
-		}
+    // build XML string response
+    if((invalid_response = buildReplyXML(recvline, sendline, read_size)))
+    {
+      perror("ERROR: invalid response");
+      break;
+    }
 
-		// write msg to client
-		if((write_size = writeSocket(sock, sendline)) == -1)
-		{
-			perror("ERROR: writeSocket");
-			break;
-		}
+    // write msg to client
+    if((write_size = writeSocket(sock, sendline)) == -1)
+    {
+      perror("ERROR: writeSocket");
+      break;
+    }
 
-		break;
-	}
+    break;
+  }
 
-	puts("callback cleanup: close socket + exit thread");
-	close(sock);
-	pthread_exit(NULL);
+  puts("callback cleanup: close socket + exit thread");
+  close(sock);
+  pthread_exit (NULL);
 
-    return 0;
+  return 0;
 }
 
 /**
@@ -168,7 +172,7 @@ void *connection_handler(void *socket_desc)
  */
 void exitHandler()
 {
-	puts("clean exit ?");
+  puts("clean exit ?");
 }
 
 /**
@@ -176,9 +180,9 @@ void exitHandler()
  */
 void shutdownHandler(int s)
 {
-	close(socket_desc);
-	writeConfig();
+  close(socket_desc);
+  writeConfig();
 
-	atexit(exitHandler);
-	exit(EXIT_SUCCESS);
+  atexit(exitHandler);
+  exit (EXIT_SUCCESS);
 }

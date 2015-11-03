@@ -1,2 +1,6 @@
-server/Debug
-client/Debug
+**/*.o
+**/server
+**/client
+.metadata
+.metadata/*
+

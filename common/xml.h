@@ -1,17 +1,19 @@
 /**
-* @file xml.h
-* @brief xml
-* xml parsing helpers
-*
-* @author Claudio Neto
-*
-* @date 3/11/2015
-*/
+ * @file xml.h
+ * @brief xml
+ * xml parsing helpers
+ *
+ * @author Claudio Neto
+ *
+ * @date 3/11/2015
+ */
 
 #ifndef XML_H_
 #define XML_H_
 
-#include "defines.h"
+#include <defines.h>
+#include <stddef.h>
+#include <stdint.h>
 
 /**
  * Builds XML

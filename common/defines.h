@@ -1,12 +1,12 @@
 /**
-* @file defines.h
-* @brief defines
-* common definitions
-*
-* @author Claudio Neto
-*
-* @date 3/11/2015
-*/
+ * @file defines.h
+ * @brief defines
+ * common definitions
+ *
+ * @author Claudio Neto
+ *
+ * @date 3/11/2015
+ */
 
 #ifndef DEFINES_H_
 #define DEFINES_H_
@@ -21,52 +21,56 @@
 #include <string.h>
 
 /**
- * true - false enum
- */
-typedef enum {
-	true,//!< true
-	false//!< false
-} eBool;
-
-/**
  * request types
  */
-typedef enum {
-	configure,//!< generate configuration xml
-	retrieve, //!< retrieve data
-	update    //!< update data
+typedef enum
+{
+  configure,	//!< generate configuration xml
+  retrieve, 	//!< retrieve data
+  update    	//!< update data
 } eRequest;
 
 /**
  * brightness levels
  */
-typedef enum {
-	dark,                //!< dark
-	average,             //!< average
-	bright,              //!< bright
-	max_brightness_levels//!< max_brightness_levels
-}  eBrightness;
+typedef enum
+{
+  dark,                	//!< dark
+  average,             	//!< average
+  bright,              	//!< bright
+  max_brightness_levels	//!< max_brightness_levels
+} eBrightness;
 
 /**
  * the various mock sensors
  */
-typedef enum {
-	battery,      //!< battery
-	brightness,   //!< brightness
-	humidity,     //!< humidity
-	noise,        //!< noise
-	personsPassed,//!< personsPassed
-	temperature,  //!< temperature
-	max_sensors   //!< max_sensors
+typedef enum
+{
+  battery,      	//!< battery
+  brightness,   	//!< brightness
+  humidity,     	//!< humidity
+  noise,        	//!< noise
+  personsPassed,	//!< personsPassed
+  temperature,  	//!< temperature
+  max_sensors   	//!< max_sensors
 } eSensor;
 
 /**
+ * true - false enum
+ */
+typedef enum
+{
+  false,    //!< 0
+  true      //!< 1
+} eBool;
+/**
  *
  */
-typedef struct {
-	int value;
-	int elapsed;
-	int interval;
+typedef struct
+{
+    int value;
+    int elapsed;
+    int interval;
 
 } Reading_t;
 

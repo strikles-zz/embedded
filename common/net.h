@@ -1,12 +1,12 @@
 /**
-* @file net.h
-* @brief networking
-* common net definitions
-*
-* @author Claudio Neto
-*
-* @date 3/11/2015
-*/
+ * @file net.h
+ * @brief networking
+ * common net definitions
+ *
+ * @author Claudio Neto
+ *
+ * @date 3/11/2015
+ */
 
 #ifndef NET_H_
 #define NET_H_
