@@ -1,0 +1,116 @@
+.TH "common/net.h" 3 "Tue Nov 3 2015" "Version 0.0.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+common/net.h \- 
+.PP
+networking common net definitions  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'defines\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBPROTOCOL_TYPE\fP   SOCK_STREAM"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBreadSocket\fP (int sock, char recvline[])"
+.br
+.ti -1c
+.RI "int \fBwriteSocket\fP (int sock, char sendline[])"
+.br
+.ti -1c
+.RI "int \fBconnectToServer\fP (void *sock_desc)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+networking common net definitions 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Claudio Neto
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+3/11/2015 
+.RE
+.PP
+
+.PP
+Definition in file \fBnet\&.h\fP\&.
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define PROTOCOL_TYPE   SOCK_STREAM"
+
+.PP
+Definition at line 14 of file net\&.h\&.
+.SH "Function Documentation"
+.PP 
+.SS "int connectToServer (void *sock_desc)"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsock_desc\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+invalid_status
+.RE
+.PP
+Connect to Sever 
+.PP
+Definition at line 85 of file net\&.c\&.
+.SS "int readSocket (intsock, charrecvline[])"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsock\fP 
+.br
+\fIrecvline\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+invalid_status
+.RE
+.PP
+Read from Socket 
+.PP
+Definition at line 24 of file net\&.c\&.
+.SS "int writeSocket (intsock, charsendline[])"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsock\fP 
+.br
+\fIsendline\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+invalid_status
+.RE
+.PP
+Write to socket 
+.PP
+Definition at line 58 of file net\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

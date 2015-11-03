@@ -1,0 +1,74 @@
+.TH "server/src/server.h" 3 "Tue Nov 3 2015" "Version 0.0.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+server/src/server.h \- 
+.PP
+server server definitions  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void * \fBconnection_handler\fP (void *)"
+.br
+.ti -1c
+.RI "void \fBshutdownHandler\fP (int s)"
+.br
+.ti -1c
+.RI "void \fBexitHandler\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+server server definitions 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Claudio Neto
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+3/11/2015 
+.RE
+.PP
+
+.PP
+Definition in file \fBserver\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "void* connection_handler (void *)"
+new connection handler 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsocket\fP fd 
+.RE
+.PP
+
+.PP
+Definition at line 113 of file server\&.c\&.
+.SS "void exitHandler ()"
+Unused 
+.PP
+Definition at line 169 of file server\&.c\&.
+.SS "void shutdownHandler (ints)"
+handler for service shutdown 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP signal
+.RE
+.PP
+shutdown handler to write config 
+.PP
+Definition at line 177 of file server\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

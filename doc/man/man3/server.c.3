@@ -1,0 +1,136 @@
+.TH "server/src/server.c" 3 "Tue Nov 3 2015" "Version 0.0.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+server/src/server.c \- 
+.PP
+server server prototypes  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <netdb\&.h>\fP
+.br
+\fC#include <arpa/inet\&.h>\fP
+.br
+\fC#include <sys/socket\&.h>\fP
+.br
+\fC#include <sys/types\&.h>\fP
+.br
+\fC#include <netinet/in\&.h>\fP
+.br
+\fC#include <pthread\&.h>\fP
+.br
+\fC#include <signal\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include 'net\&.h'\fP
+.br
+\fC#include 'sensors\&.h'\fP
+.br
+\fC#include 'xml\&.h'\fP
+.br
+\fC#include 'server\&.h'\fP
+.br
+\fC#include 'tests/test\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBSRV_PORT\fP   6423"
+.br
+.ti -1c
+.RI "#define \fBTEST\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP (int argc, char *argv[])"
+.br
+.ti -1c
+.RI "void * \fBconnection_handler\fP (void *\fBsocket_desc\fP)"
+.br
+.ti -1c
+.RI "void \fBexitHandler\fP ()"
+.br
+.ti -1c
+.RI "void \fBshutdownHandler\fP (int s)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBsocket_desc\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+server server prototypes 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Claudio Neto
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+3/11/2015 
+.RE
+.PP
+
+.PP
+Definition in file \fBserver\&.c\fP\&.
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define SRV_PORT   6423"
+
+.PP
+Definition at line 11 of file server\&.c\&.
+.SS "#define TEST"
+
+.PP
+Definition at line 12 of file server\&.c\&.
+.SH "Function Documentation"
+.PP 
+.SS "void* connection_handler (void *)"
+new connection handler 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsocket\fP fd 
+.RE
+.PP
+
+.PP
+Definition at line 113 of file server\&.c\&.
+.SS "void exitHandler ()"
+Unused 
+.PP
+Definition at line 169 of file server\&.c\&.
+.SS "int main (intargc, char *argv[])"
+
+.PP
+Definition at line 36 of file server\&.c\&.
+.SS "void shutdownHandler (ints)"
+shutdown handler to write config 
+.PP
+Definition at line 177 of file server\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "int socket_desc"
+
+.PP
+Definition at line 34 of file server\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

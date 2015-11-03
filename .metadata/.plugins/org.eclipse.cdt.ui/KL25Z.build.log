@@ -1,0 +1,11 @@
+20:49:37 **** Incremental Build of configuration Debug for project KL25Z ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "KL25Z.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5383	    160	    416	   5959	   1747	KL25Z.elf
+Finished building: KL25Z.siz
+ 
+
+20:49:37 Build Finished (took 162ms)
+

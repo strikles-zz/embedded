@@ -1,0 +1,5 @@
+digraph doxygraph
+{
+graph [ rankdir="RL" ]
+"struct_reading__t" [ label="Reading_t\n||+elapsed : int\l+interval : int\l+value : int\l" shape="record" ]
+}

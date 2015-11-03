@@ -1,0 +1,88 @@
+\section{common/sensors.h File Reference}
+\label{sensors_8h}\index{common/sensors.\-h@{common/sensors.\-h}}
+
+
+mock sensors common mock sensors definitions  
+
+
+{\ttfamily \#include \char`\"{}defines.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\-\_\-t {\bf get\-Sensor\-Reading\-Str} ({\bf e\-Sensor} s, char buffer[$\,$])
+\item 
+int {\bf new\-Measurement} ({\bf e\-Sensor} s)
+\item 
+uint16\-\_\-t {\bf generate\-Measurements} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+mock sensors common mock sensors definitions \begin{DoxyAuthor}{Author}
+Claudio Neto
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+3/11/2015 
+\end{DoxyDate}
+
+
+Definition in file {\bf sensors.\-h}.
+
+
+
+\subsection{Function Documentation}
+\index{sensors.\-h@{sensors.\-h}!generate\-Measurements@{generate\-Measurements}}
+\index{generate\-Measurements@{generate\-Measurements}!sensors.h@{sensors.\-h}}
+\subsubsection[{generate\-Measurements}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t generate\-Measurements (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{sensors_8h_afa2662e08e833375e2b6d8d713d0d7a3}
+helper -\/ loop to generate measurements \begin{DoxyReturn}{Returns}
+invalid\-\_\-status
+\end{DoxyReturn}
+helper -\/ loop to generate measurements 
+
+Definition at line 70 of file sensors.\-c.
+
+\index{sensors.\-h@{sensors.\-h}!get\-Sensor\-Reading\-Str@{get\-Sensor\-Reading\-Str}}
+\index{get\-Sensor\-Reading\-Str@{get\-Sensor\-Reading\-Str}!sensors.h@{sensors.\-h}}
+\subsubsection[{get\-Sensor\-Reading\-Str}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t get\-Sensor\-Reading\-Str (
+\begin{DoxyParamCaption}
+\item[{{\bf e\-Sensor}}]{s, }
+\item[{char}]{buffer[$\,$]}
+\end{DoxyParamCaption}
+)}\label{sensors_8h_a06f41875c9c55c4e531cc8b25fb9b427}
+helper -\/ gets a measurement 
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+{\em buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+invalid\-\_\-status
+\end{DoxyReturn}
+helper -\/ gets a measurement 
+
+Definition at line 18 of file sensors.\-c.
+
+\index{sensors.\-h@{sensors.\-h}!new\-Measurement@{new\-Measurement}}
+\index{new\-Measurement@{new\-Measurement}!sensors.h@{sensors.\-h}}
+\subsubsection[{new\-Measurement}]{\setlength{\rightskip}{0pt plus 5cm}int new\-Measurement (
+\begin{DoxyParamCaption}
+\item[{{\bf e\-Sensor}}]{s}
+\end{DoxyParamCaption}
+)}\label{sensors_8h_a17189321c81ebc3407443f7a4cb96c3e}
+helper -\/ sets a random measurement value 
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+invalid\-\_\-status
+\end{DoxyReturn}
+helper -\/ sets a random measurement value 
+
+Definition at line 43 of file sensors.\-c.
+

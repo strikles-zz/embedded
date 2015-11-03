@@ -1,0 +1,77 @@
+/*
+ * net.c
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+#include <time.h>
+#include <unistd.h>
+
+#include <netdb.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <sys/types.h>
+
+#include "net.h"
+
+uint16_t readSocket(int sock, char buffer[], size_t len)
+{
+	bzero(buffer, MAX_MSG_LEN);
+	int n = 0;
+
+	while(1)
+	{
+	    if ((n = read(sock, buffer, MAX_MSG_LEN - 1)) == -1)
+	    {
+	        perror("ERROR reading from socket");
+	        return n;
+	    }
+	    if(n == 0)
+	    {
+	        puts("peer shutted down");
+	        break;
+	    }
+
+	    buffer[n] = '\0';
+	}
+
+	printf("read status: %d, %d\n", n);
+
+	return n;
+}
+
+uint16_t writeSocket(int sock, char buffer[], size_t len)
+{
+	bzero(buffer, MAX_MSG_LEN);
+	int n = 1;
+
+	while(1)
+	{
+	    n = write(sock, buffer, len);
+	    if (n < 0)
+	    {
+	        perror("ERROR writing to socket");
+	        break;
+	    }
+	    if(n == 0)
+	    {
+	        perror("peer shutted down");
+	        break;
+	    }
+	    if(n > MAX_MSG_LEN)
+	    {
+	        perror("message doesnt fit in buffer");
+	        break;
+	    }
+
+	    pBuf += n;
+	    bytesLeft -= n;
+	    buffer[n] = '\0';
+	}
+
+
+	printf("write status: %d, %d\n", n, bytesLeft);
+
+	return n;
+}

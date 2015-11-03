@@ -1,0 +1,17 @@
+/*
+ * client.h
+ *
+ *  Created on: Nov 1, 2015
+ *      Author: strikles
+ */
+
+#ifndef CLIENT_H_
+#define CLIENT_H_
+
+// generic
+typedef enum {
+	true,
+	false
+} eBool;
+
+#endif /* CLIENT_H_ */

@@ -1,0 +1,62 @@
+/*
+ * defines.h
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+#ifndef DEFINES_H_
+#define DEFINES_H_
+
+#define MAX_MSG_LEN 1048
+
+// generic
+typedef enum {
+	true,
+	false
+} eBool;
+
+// brightness
+typedef enum {
+	dark,
+	average,
+	bright,
+	max_brightness_levels
+}  eBrightness;
+
+// sensors
+typedef enum {
+	battery,
+	brightness,
+	humidity,
+	noise,
+	personsPassed,
+	temperature,
+	max_sensors
+} eSensor;
+
+const char* brightness_str[] = {
+	"dark",
+	"average",
+	"bright",
+	"max_brightness"
+};
+
+const char* sensor_str[] = {
+	"battery",
+	"brightness",
+	"humidity",
+	"noise",
+	"personsPassed",
+	"temperature",
+	"max_sensors"
+};
+
+typedef struct {
+	int value;
+	int elapsed;
+	int interval;
+
+} Reading_t;
+
+#endif /* DEFINES_H_ */

@@ -1,0 +1,137 @@
+\section{server/src/server.c File Reference}
+\label{server_8c}\index{server/src/server.\-c@{server/src/server.\-c}}
+
+
+server server prototypes  
+
+
+{\ttfamily \#include $<$netdb.\-h$>$}\\*
+{\ttfamily \#include $<$arpa/inet.\-h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\-h$>$}\\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include $<$netinet/in.\-h$>$}\\*
+{\ttfamily \#include $<$pthread.\-h$>$}\\*
+{\ttfamily \#include $<$signal.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}net.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sensors.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}xml.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}server.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tests/test.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bf S\-R\-V\-\_\-\-P\-O\-R\-T}~6423
+\item 
+\#define {\bf T\-E\-S\-T}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf main} (int argc, char $\ast$argv[$\,$])
+\item 
+void $\ast$ {\bf connection\-\_\-handler} (void $\ast${\bf socket\-\_\-desc})
+\item 
+void {\bf exit\-Handler} ()
+\item 
+void {\bf shutdown\-Handler} (int s)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf socket\-\_\-desc}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+server server prototypes \begin{DoxyAuthor}{Author}
+Claudio Neto
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+3/11/2015 
+\end{DoxyDate}
+
+
+Definition in file {\bf server.\-c}.
+
+
+
+\subsection{Macro Definition Documentation}
+\index{server.\-c@{server.\-c}!S\-R\-V\-\_\-\-P\-O\-R\-T@{S\-R\-V\-\_\-\-P\-O\-R\-T}}
+\index{S\-R\-V\-\_\-\-P\-O\-R\-T@{S\-R\-V\-\_\-\-P\-O\-R\-T}!server.c@{server.\-c}}
+\subsubsection[{S\-R\-V\-\_\-\-P\-O\-R\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-R\-V\-\_\-\-P\-O\-R\-T~6423}\label{server_8c_aee1132b8a79e9a6dd0d19a93f7133389}
+
+
+Definition at line 11 of file server.\-c.
+
+\index{server.\-c@{server.\-c}!T\-E\-S\-T@{T\-E\-S\-T}}
+\index{T\-E\-S\-T@{T\-E\-S\-T}!server.c@{server.\-c}}
+\subsubsection[{T\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-E\-S\-T}\label{server_8c_ab946e2e7f7679350627acfded8e2658b}
+
+
+Definition at line 12 of file server.\-c.
+
+
+
+\subsection{Function Documentation}
+\index{server.\-c@{server.\-c}!connection\-\_\-handler@{connection\-\_\-handler}}
+\index{connection\-\_\-handler@{connection\-\_\-handler}!server.c@{server.\-c}}
+\subsubsection[{connection\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ connection\-\_\-handler (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)}\label{server_8c_a32102343afef8efa4719cc354367b5c4}
+new connection handler 
+\begin{DoxyParams}{Parameters}
+{\em socket} & fd \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file server.\-c.
+
+\index{server.\-c@{server.\-c}!exit\-Handler@{exit\-Handler}}
+\index{exit\-Handler@{exit\-Handler}!server.c@{server.\-c}}
+\subsubsection[{exit\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void exit\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{server_8c_a4a26b396e509e6a65eae2d72ac5a190a}
+Unused 
+
+Definition at line 169 of file server.\-c.
+
+\index{server.\-c@{server.\-c}!main@{main}}
+\index{main@{main}!server.c@{server.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv[$\,$]}
+\end{DoxyParamCaption}
+)}\label{server_8c_a0ddf1224851353fc92bfbff6f499fa97}
+
+
+Definition at line 36 of file server.\-c.
+
+\index{server.\-c@{server.\-c}!shutdown\-Handler@{shutdown\-Handler}}
+\index{shutdown\-Handler@{shutdown\-Handler}!server.c@{server.\-c}}
+\subsubsection[{shutdown\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void shutdown\-Handler (
+\begin{DoxyParamCaption}
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}\label{server_8c_ab6bb131db1ab53e88dd407d39e989a06}
+shutdown handler to write config 
+
+Definition at line 177 of file server.\-c.
+
+
+
+\subsection{Variable Documentation}
+\index{server.\-c@{server.\-c}!socket\-\_\-desc@{socket\-\_\-desc}}
+\index{socket\-\_\-desc@{socket\-\_\-desc}!server.c@{server.\-c}}
+\subsubsection[{socket\-\_\-desc}]{\setlength{\rightskip}{0pt plus 5cm}int socket\-\_\-desc}\label{server_8c_adeadf7cb6916a10c7142ce7d265ab32a}
+
+
+Definition at line 34 of file server.\-c.
+

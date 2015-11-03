@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="sensors_8h" kind="file">
+    <compoundname>sensors.h</compoundname>
+    <includes refid="defines_8h" local="yes">defines.h</includes>
+    <includedby refid="client_8c" local="yes">client/src/client.c</includedby>
+    <includedby refid="sensors_8c" local="yes">common/sensors.c</includedby>
+    <includedby refid="xml_8c" local="yes">common/xml.c</includedby>
+    <includedby refid="server_8c" local="yes">server/src/server.c</includedby>
+    <incdepgraph>
+      <node id="99">
+        <label>stdint.h</label>
+      </node>
+      <node id="98">
+        <label>stdlib.h</label>
+      </node>
+      <node id="96">
+        <label>common/sensors.h</label>
+        <link refid="sensors.h"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>defines.h</label>
+        <link refid="defines_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>string.h</label>
+      </node>
+      <node id="100">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="103">
+        <label>client/src/client.c</label>
+        <link refid="client_8c"/>
+      </node>
+      <node id="104">
+        <label>common/sensors.c</label>
+        <link refid="sensors_8c"/>
+      </node>
+      <node id="102">
+        <label>common/sensors.h</label>
+        <link refid="sensors.h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>common/xml.c</label>
+        <link refid="xml_8c"/>
+      </node>
+      <node id="106">
+        <label>server/src/server.c</label>
+        <link refid="server_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sensors_8h_1a06f41875c9c55c4e531cc8b25fb9b427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t getSensorReadingStr</definition>
+        <argsstring>(eSensor s, char buffer[])</argsstring>
+        <name>getSensorReadingStr</name>
+        <param>
+          <type><ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857" kindref="member">eSensor</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>buffer</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>helper - gets a measurement <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>invalid_status</para></simplesect>
+helper - gets a measurement </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/sensors.h" line="22" column="1" bodyfile="/home/strikles/workspace/common/sensors.c" bodystart="18" bodyend="38"/>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a6afd62f6c5a27893b2b94c2854f8514d" compoundref="defines_8h" startline="55">brightness</references>
+        <references refid="defines_8c_1aa66266408de980f8f70d74c36e24ef9c" compoundref="defines_8c" startline="19">brightness_str</references>
+        <referencedby refid="xml_8h_1a40c4d4b938104b27b9d740ae5fcc0640" compoundref="xml_8c" startline="117" endline="193">buildRequestXML</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="sensors_8h_1a17189321c81ebc3407443f7a4cb96c3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int newMeasurement</definition>
+        <argsstring>(eSensor s)</argsstring>
+        <name>newMeasurement</name>
+        <param>
+          <type><ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857" kindref="member">eSensor</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>helper - sets a random measurement value <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>invalid_status</para></simplesect>
+helper - sets a random measurement value </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/sensors.h" line="29" column="1" bodyfile="/home/strikles/workspace/common/sensors.c" bodystart="43" bodyend="65"/>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af7faad7c57f8e1d49eac1fd1ccf83c8c" compoundref="defines_8h" startline="54">battery</references>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a6afd62f6c5a27893b2b94c2854f8514d" compoundref="defines_8h" startline="55">brightness</references>
+        <references refid="defines_8h_1a74537517bf20d5af522adc27a07dff0ba43009deba0aecdd959693a524534456d" compoundref="defines_8h" startline="47">max_brightness_levels</references>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af78a0094726cca324b69464b475ed069" compoundref="defines_8h" startline="56">humidity</references>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9e67510d0af57b4c4e7f33f88a9a18f8" compoundref="defines_8h" startline="57">noise</references>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857abe4c82e1f6065d36e7cf19c7bbc00005" compoundref="defines_8h" startline="58">personsPassed</references>
+        <references refid="struct_reading__t_1ac4f474c82e82cbb89ca7c36dd52be0ed" compoundref="defines_8h" startline="67">Reading_t::value</references>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9922a43d37bee3212593f77ce4ec82f3" compoundref="defines_8h" startline="59">temperature</references>
+        <referencedby refid="sensors_8h_1afa2662e08e833375e2b6d8d713d0d7a3" compoundref="sensors_8c" startline="70" endline="81">generateMeasurements</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="sensors_8h_1afa2662e08e833375e2b6d8d713d0d7a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t generateMeasurements</definition>
+        <argsstring>(void)</argsstring>
+        <name>generateMeasurements</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>helper - loop to generate measurements <simplesect kind="return"><para>invalid_status</para></simplesect>
+helper - loop to generate measurements </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/sensors.h" line="35" column="1" bodyfile="/home/strikles/workspace/common/sensors.c" bodystart="70" bodyend="81"/>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c" compoundref="defines_8h" startline="60">max_sensors</references>
+        <references refid="struct_reading__t_1ac4f474c82e82cbb89ca7c36dd52be0ed" compoundref="defines_8h" startline="67">Reading_t::value</references>
+        <references refid="sensors_8c_1a17189321c81ebc3407443f7a4cb96c3e" compoundref="sensors_8c" startline="43" endline="65">newMeasurement</references>
+        <references refid="struct_reading__t_1a4bd3978f9fa83a0e08225dca54a00eb6" compoundref="defines_8h" startline="68">Reading_t::elapsed</references>
+        <references refid="struct_reading__t_1ae0c690118932b32ef40a74bb6a259acd" compoundref="defines_8h" startline="69">Reading_t::interval</references>
+        <referencedby refid="client_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="client_8c" startline="31" endline="98">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>mock sensors common mock sensors definitions </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Claudio Neto</para></simplesect>
+<simplesect kind="date"><para>3/11/2015 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>SENSORS_H_</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SENSORS_H_</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="defines_8h" kindref="compound">defines.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">uint16_t<sp/><ref refid="sensors_8h_1a06f41875c9c55c4e531cc8b25fb9b427" kindref="member">getSensorReadingStr</ref>(<ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857" kindref="member">eSensor</ref><sp/>s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[]);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="sensors_8h_1a17189321c81ebc3407443f7a4cb96c3e" kindref="member">newMeasurement</ref>(<ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857" kindref="member">eSensor</ref><sp/>s);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">uint16_t<sp/><ref refid="sensors_8h_1afa2662e08e833375e2b6d8d713d0d7a3" kindref="member">generateMeasurements</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SENSORS_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/strikles/workspace/common/sensors.h"/>
+  </compounddef>
+</doxygen>

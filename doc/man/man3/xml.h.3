@@ -1,0 +1,114 @@
+.TH "common/xml.h" 3 "Tue Nov 3 2015" "Version 0.0.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+common/xml.h \- 
+.PP
+xml xml parsing helpers  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'defines\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBbuildReplyXML\fP (char recvline[], char sendline[], size_t read_size)"
+.br
+.ti -1c
+.RI "uint16_t \fBbuildRequestXML\fP (\fBeRequest\fP req, char sendline[])"
+.br
+.ti -1c
+.RI "int \fBwriteConfig\fP ()"
+.br
+.ti -1c
+.RI "int \fBreadConfig\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+xml xml parsing helpers 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Claudio Neto
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+3/11/2015 
+.RE
+.PP
+
+.PP
+Definition in file \fBxml\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "uint16_t buildReplyXML (charrecvline[], charsendline[], size_tread_size)"
+Builds XML 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIrecvline\fP 
+.br
+\fIsendline\fP 
+.br
+\fIread_size\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+invalid_status
+.RE
+.PP
+Build Server reply XML 
+.PP
+Definition at line 22 of file xml\&.c\&.
+.SS "uint16_t buildRequestXML (\fBeRequest\fPreq, charsendline[])"
+builds a client xml request (update/retrieve) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIreq\fP 
+.br
+\fIsendline\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+invalid_status
+.RE
+.PP
+builds a client xml request (update/retrieve) 
+.PP
+Definition at line 117 of file xml\&.c\&.
+.SS "int readConfig ()"
+Load Reading from file 
+.PP
+\fBReturns:\fP
+.RS 4
+invalid_status
+.RE
+.PP
+Load Reading from file 
+.PP
+Definition at line 226 of file xml\&.c\&.
+.SS "int writeConfig ()"
+Save readings to file 
+.PP
+\fBReturns:\fP
+.RS 4
+invalid_status
+.RE
+.PP
+Save readings to file 
+.PP
+Definition at line 198 of file xml\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

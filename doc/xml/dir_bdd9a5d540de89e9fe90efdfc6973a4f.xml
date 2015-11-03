@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_bdd9a5d540de89e9fe90efdfc6973a4f" kind="dir">
+    <compoundname>common</compoundname>
+    <innerfile refid="defines_8c">defines.c</innerfile>
+    <innerfile refid="defines_8h">defines.h</innerfile>
+    <innerfile refid="net_8c">net.c</innerfile>
+    <innerfile refid="net_8h">net.h</innerfile>
+    <innerfile refid="sensors_8c">sensors.c</innerfile>
+    <innerfile refid="sensors_8h">sensors.h</innerfile>
+    <innerfile refid="xml_8c">xml.c</innerfile>
+    <innerfile refid="xml_8h">xml.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/strikles/workspace/common/"/>
+  </compounddef>
+</doxygen>

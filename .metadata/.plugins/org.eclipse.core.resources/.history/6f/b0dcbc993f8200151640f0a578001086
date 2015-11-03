@@ -1,0 +1,51 @@
+/*
+ * test.c
+ *
+ *  Created on: Oct 25, 2015
+ *      Author: strikles
+ */
+
+
+#include "defines.h"
+#include "test.h"
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "ezxml.h"
+
+
+int retrieve_all_test() {
+
+	char sendline[MAX_MSG_LEN];
+	char recvline[] = "<retrieve\>";
+
+
+	return 0;
+}
+
+int invalidXML_test()
+{
+	char sendline[MAX_MSG_LEN];
+	char recvline[] = "<update>"
+	" <temperature>10</temperature>"
+	"</updat";
+
+	return 0;
+}
+
+int invalidProperty_test()
+{
+	char invalidpropert_str[] = "<update>"
+	" <bananas>10</bananas>"
+	"</update>";
+
+	return 0;
+}
+
+int xml_test()
+{
+	retrieve_all_test();
+	invalidXML_test();
+	invalidProperty_test();
+}

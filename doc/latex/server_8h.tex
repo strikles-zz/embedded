@@ -1,0 +1,75 @@
+\section{server/src/server.h File Reference}
+\label{server_8h}\index{server/src/server.\-h@{server/src/server.\-h}}
+
+
+server server definitions  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bf connection\-\_\-handler} (void $\ast$)
+\item 
+void {\bf shutdown\-Handler} (int s)
+\item 
+void {\bf exit\-Handler} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+server server definitions \begin{DoxyAuthor}{Author}
+Claudio Neto
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+3/11/2015 
+\end{DoxyDate}
+
+
+Definition in file {\bf server.\-h}.
+
+
+
+\subsection{Function Documentation}
+\index{server.\-h@{server.\-h}!connection\-\_\-handler@{connection\-\_\-handler}}
+\index{connection\-\_\-handler@{connection\-\_\-handler}!server.h@{server.\-h}}
+\subsubsection[{connection\-\_\-handler}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ connection\-\_\-handler (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)}\label{server_8h_a99c88edc68ebbf9b09eabca690a3b515}
+new connection handler 
+\begin{DoxyParams}{Parameters}
+{\em socket} & fd \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 113 of file server.\-c.
+
+\index{server.\-h@{server.\-h}!exit\-Handler@{exit\-Handler}}
+\index{exit\-Handler@{exit\-Handler}!server.h@{server.\-h}}
+\subsubsection[{exit\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void exit\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{server_8h_a4a26b396e509e6a65eae2d72ac5a190a}
+Unused 
+
+Definition at line 169 of file server.\-c.
+
+\index{server.\-h@{server.\-h}!shutdown\-Handler@{shutdown\-Handler}}
+\index{shutdown\-Handler@{shutdown\-Handler}!server.h@{server.\-h}}
+\subsubsection[{shutdown\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}void shutdown\-Handler (
+\begin{DoxyParamCaption}
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}\label{server_8h_ab6bb131db1ab53e88dd407d39e989a06}
+handler for service shutdown 
+\begin{DoxyParams}{Parameters}
+{\em s} & signal\\
+\hline
+\end{DoxyParams}
+shutdown handler to write config 
+
+Definition at line 177 of file server.\-c.
+

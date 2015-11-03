@@ -1,0 +1,43 @@
+/*
+ * test.c
+ *
+ *  Created on: Oct 25, 2015
+ *      Author: strikles
+ */
+
+#include "test.h"
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "ezxml.h"
+
+
+int retrieve_all_test() {
+
+	char retrieve_all_str[] = "<retrieve\>";
+}
+
+void invalidXML_test
+	char retrieve_all_str[] = ""
+	"<update>"
+	" <temperature>10</temperature>"
+	"</updat>";
+
+
+	const char *teamname;
+	ezxml_t f1 = ezxml_parse_str(xml_str, strlen(xml_str));
+	ezxml_t team, driver;
+
+    for (team = ezxml_child(f1, "team"); team; team = team->next)
+    {
+        teamname = ezxml_attr(team, "name");
+        for (driver = ezxml_child(team, "driver"); driver; driver = driver->next)
+        {
+            printf("%s, %s: %s\n", ezxml_child(driver, "name")->txt, teamname,
+                   ezxml_child(driver, "points")->txt);
+        }
+    }
+
+	ezxml_free(f1);
+}

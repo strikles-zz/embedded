@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a74537517bf20d5af522adc27a07dff0bae478d4d7f90177e87ed05369ad732b25"><param name="Name" value="average"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857af7faad7c57f8e1d49eac1fd1ccf83c8c"><param name="Name" value="battery"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a74537517bf20d5af522adc27a07dff0baadf74e9a8193f92c453d072e4b3584a1"><param name="Name" value="bright"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857a6afd62f6c5a27893b2b94c2854f8514d"><param name="Name" value="brightness"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8c.html#aa66266408de980f8f70d74c36e24ef9c"><param name="Name" value="brightness_str"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8c.html#aa66266408de980f8f70d74c36e24ef9c"><param name="Name" value="defines.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#aa66266408de980f8f70d74c36e24ef9c"><param name="Name" value="defines.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a397bd0803103d9d6a9ba58ada6845307"><param name="Name" value="buildReplyXML"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a397bd0803103d9d6a9ba58ada6845307"><param name="Name" value="xml.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8h.html#a397bd0803103d9d6a9ba58ada6845307"><param name="Name" value="xml.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a40c4d4b938104b27b9d740ae5fcc0640"><param name="Name" value="buildRequestXML"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a40c4d4b938104b27b9d740ae5fcc0640"><param name="Name" value="xml.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8h.html#a40c4d4b938104b27b9d740ae5fcc0640"><param name="Name" value="xml.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="client_8c.html"><param name="Name" value="client.c"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="client_2src_2tests_2test_8c.html"><param name="Name" value="client/src/tests/test.c"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="client_2src_2tests_2test_8h.html"><param name="Name" value="client/src/tests/test.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#ab485e71594add692a01e9b87963e0e34a983aedd7cd1f52c07d1e8e4804287cef"><param name="Name" value="configure"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#a32102343afef8efa4719cc354367b5c4"><param name="Name" value="connection_handler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#a32102343afef8efa4719cc354367b5c4"><param name="Name" value="server.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8h.html#a99c88edc68ebbf9b09eabca690a3b515"><param name="Name" value="server.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8c.html#a7e8fd0c8a9ece620618794b18387aa99"><param name="Name" value="connectToServer"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8c.html#a7e8fd0c8a9ece620618794b18387aa99"><param name="Name" value="net.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8h.html#a7e8fd0c8a9ece620618794b18387aa99"><param name="Name" value="net.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a74537517bf20d5af522adc27a07dff0baa576f04a6a2d8acc5c52fe798875dc07"><param name="Name" value="dark"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8c.html"><param name="Name" value="defines.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8c.html#aa66266408de980f8f70d74c36e24ef9c"><param name="Name" value="brightness_str"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8c.html#a3a6251b9cae8d7da3cec393b23df3228"><param name="Name" value="request_str"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8c.html#aa1c2df433b41481f1dee5aa6519df290"><param name="Name" value="sensor_str"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html"><param name="Name" value="defines.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a74537517bf20d5af522adc27a07dff0bae478d4d7f90177e87ed05369ad732b25"><param name="Name" value="average"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857af7faad7c57f8e1d49eac1fd1ccf83c8c"><param name="Name" value="battery"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a74537517bf20d5af522adc27a07dff0baadf74e9a8193f92c453d072e4b3584a1"><param name="Name" value="bright"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857a6afd62f6c5a27893b2b94c2854f8514d"><param name="Name" value="brightness"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#aa66266408de980f8f70d74c36e24ef9c"><param name="Name" value="brightness_str"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#ab485e71594add692a01e9b87963e0e34a983aedd7cd1f52c07d1e8e4804287cef"><param name="Name" value="configure"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a74537517bf20d5af522adc27a07dff0baa576f04a6a2d8acc5c52fe798875dc07"><param name="Name" value="dark"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a380ce63b151a8118e69bcaa34f731958ae9de385ef6fe9bf3360d1038396b884c"><param name="Name" value="false"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857af78a0094726cca324b69464b475ed069"><param name="Name" value="humidity"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a74537517bf20d5af522adc27a07dff0ba43009deba0aecdd959693a524534456d"><param name="Name" value="max_brightness_levels"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a51d90ea93d4b55e086cb490f7478e684"><param name="Name" value="MAX_MSG_LEN"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c"><param name="Name" value="max_sensors"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857a9e67510d0af57b4c4e7f33f88a9a18f8"><param name="Name" value="noise"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857abe4c82e1f6065d36e7cf19c7bbc00005"><param name="Name" value="personsPassed"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a3a6251b9cae8d7da3cec393b23df3228"><param name="Name" value="request_str"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#ab485e71594add692a01e9b87963e0e34af410ad0732b2aec7b579eb0084a2a1fd"><param name="Name" value="retrieve"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#aa1c2df433b41481f1dee5aa6519df290"><param name="Name" value="sensor_str"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#ad43b436f38b6543a54dc74559fe7be11"><param name="Name" value="SRV_ADDR"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#aee1132b8a79e9a6dd0d19a93f7133389"><param name="Name" value="SRV_PORT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857a9922a43d37bee3212593f77ce4ec82f3"><param name="Name" value="temperature"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a380ce63b151a8118e69bcaa34f731958a08f175a5505a10b9ed657defeb050e4b"><param name="Name" value="true"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#ab485e71594add692a01e9b87963e0e34a15edc24cdf7dea17a43c6c50580eba2b"><param name="Name" value="update"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_reading__t.html#a4bd3978f9fa83a0e08225dca54a00eb6"><param name="Name" value="elapsed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#a4a26b396e509e6a65eae2d72ac5a190a"><param name="Name" value="exitHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#a4a26b396e509e6a65eae2d72ac5a190a"><param name="Name" value="server.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8h.html#a4a26b396e509e6a65eae2d72ac5a190a"><param name="Name" value="server.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a380ce63b151a8118e69bcaa34f731958ae9de385ef6fe9bf3360d1038396b884c"><param name="Name" value="false"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#afa2662e08e833375e2b6d8d713d0d7a3"><param name="Name" value="generateMeasurements"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#afa2662e08e833375e2b6d8d713d0d7a3"><param name="Name" value="sensors.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8h.html#afa2662e08e833375e2b6d8d713d0d7a3"><param name="Name" value="sensors.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#a06f41875c9c55c4e531cc8b25fb9b427"><param name="Name" value="getSensorReadingStr"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#a06f41875c9c55c4e531cc8b25fb9b427"><param name="Name" value="sensors.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8h.html#a06f41875c9c55c4e531cc8b25fb9b427"><param name="Name" value="sensors.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857af78a0094726cca324b69464b475ed069"><param name="Name" value="humidity"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_reading__t.html#ae0c690118932b32ef40a74bb6a259acd"><param name="Name" value="interval"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="client_8c.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="main"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="client_8c.html#a3c04138a5bfe5d72780bb7e82a18e627"><param name="Name" value="client.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#a0ddf1224851353fc92bfbff6f499fa97"><param name="Name" value="server.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a74537517bf20d5af522adc27a07dff0ba43009deba0aecdd959693a524534456d"><param name="Name" value="max_brightness_levels"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a51d90ea93d4b55e086cb490f7478e684"><param name="Name" value="MAX_MSG_LEN"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c"><param name="Name" value="max_sensors"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8c.html"><param name="Name" value="net.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8c.html#a7e8fd0c8a9ece620618794b18387aa99"><param name="Name" value="connectToServer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8c.html#a5648e23ffc8afb543a41ca08b252e2c6"><param name="Name" value="readSocket"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8c.html#adb296d69ad81a26650f6478eb63c78bc"><param name="Name" value="writeSocket"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8h.html"><param name="Name" value="net.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8h.html#a7e8fd0c8a9ece620618794b18387aa99"><param name="Name" value="connectToServer"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8h.html#aebe97308412c97831f443fb38699c946"><param name="Name" value="PROTOCOL_TYPE"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8h.html#a5648e23ffc8afb543a41ca08b252e2c6"><param name="Name" value="readSocket"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8h.html#adb296d69ad81a26650f6478eb63c78bc"><param name="Name" value="writeSocket"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#a17189321c81ebc3407443f7a4cb96c3e"><param name="Name" value="newMeasurement"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#a17189321c81ebc3407443f7a4cb96c3e"><param name="Name" value="sensors.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8h.html#a17189321c81ebc3407443f7a4cb96c3e"><param name="Name" value="sensors.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857a9e67510d0af57b4c4e7f33f88a9a18f8"><param name="Name" value="noise"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857abe4c82e1f6065d36e7cf19c7bbc00005"><param name="Name" value="personsPassed"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8h.html#aebe97308412c97831f443fb38699c946"><param name="Name" value="PROTOCOL_TYPE"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#ac88a4185c09ac0664d9d747f99a784c6"><param name="Name" value="readConfig"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#ac88a4185c09ac0664d9d747f99a784c6"><param name="Name" value="xml.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8h.html#ac88a4185c09ac0664d9d747f99a784c6"><param name="Name" value="xml.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_reading__t.html"><param name="Name" value="Reading_t"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_reading__t.html#a4bd3978f9fa83a0e08225dca54a00eb6"><param name="Name" value="elapsed"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_reading__t.html#ae0c690118932b32ef40a74bb6a259acd"><param name="Name" value="interval"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_reading__t.html#ac4f474c82e82cbb89ca7c36dd52be0ed"><param name="Name" value="value"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#a6c45ab1ab93ccb893b64ed84e091ffd5"><param name="Name" value="readings"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#a6c45ab1ab93ccb893b64ed84e091ffd5"><param name="Name" value="sensors.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a6c45ab1ab93ccb893b64ed84e091ffd5"><param name="Name" value="xml.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8c.html#a5648e23ffc8afb543a41ca08b252e2c6"><param name="Name" value="readSocket"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8c.html#a5648e23ffc8afb543a41ca08b252e2c6"><param name="Name" value="net.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8h.html#a5648e23ffc8afb543a41ca08b252e2c6"><param name="Name" value="net.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8c.html#a3a6251b9cae8d7da3cec393b23df3228"><param name="Name" value="request_str"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8c.html#a3a6251b9cae8d7da3cec393b23df3228"><param name="Name" value="defines.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a3a6251b9cae8d7da3cec393b23df3228"><param name="Name" value="defines.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#ab485e71594add692a01e9b87963e0e34af410ad0732b2aec7b579eb0084a2a1fd"><param name="Name" value="retrieve"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8c.html#aa1c2df433b41481f1dee5aa6519df290"><param name="Name" value="sensor_str"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8c.html#aa1c2df433b41481f1dee5aa6519df290"><param name="Name" value="defines.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#aa1c2df433b41481f1dee5aa6519df290"><param name="Name" value="defines.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html"><param name="Name" value="sensors.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#afa2662e08e833375e2b6d8d713d0d7a3"><param name="Name" value="generateMeasurements"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#a06f41875c9c55c4e531cc8b25fb9b427"><param name="Name" value="getSensorReadingStr"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#a17189321c81ebc3407443f7a4cb96c3e"><param name="Name" value="newMeasurement"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8c.html#a6c45ab1ab93ccb893b64ed84e091ffd5"><param name="Name" value="readings"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8h.html"><param name="Name" value="sensors.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8h.html#afa2662e08e833375e2b6d8d713d0d7a3"><param name="Name" value="generateMeasurements"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8h.html#a06f41875c9c55c4e531cc8b25fb9b427"><param name="Name" value="getSensorReadingStr"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="sensors_8h.html#a17189321c81ebc3407443f7a4cb96c3e"><param name="Name" value="newMeasurement"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html"><param name="Name" value="server.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#a32102343afef8efa4719cc354367b5c4"><param name="Name" value="connection_handler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#a4a26b396e509e6a65eae2d72ac5a190a"><param name="Name" value="exitHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#a0ddf1224851353fc92bfbff6f499fa97"><param name="Name" value="main"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#ab6bb131db1ab53e88dd407d39e989a06"><param name="Name" value="shutdownHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#adeadf7cb6916a10c7142ce7d265ab32a"><param name="Name" value="socket_desc"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#aee1132b8a79e9a6dd0d19a93f7133389"><param name="Name" value="SRV_PORT"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#ab946e2e7f7679350627acfded8e2658b"><param name="Name" value="TEST"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8h.html"><param name="Name" value="server.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8h.html#a99c88edc68ebbf9b09eabca690a3b515"><param name="Name" value="connection_handler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8h.html#a4a26b396e509e6a65eae2d72ac5a190a"><param name="Name" value="exitHandler"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8h.html#ab6bb131db1ab53e88dd407d39e989a06"><param name="Name" value="shutdownHandler"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="server_2src_2tests_2test_8c.html"><param name="Name" value="server/src/tests/test.c"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="server_2src_2tests_2test_8h.html"><param name="Name" value="server/src/tests/test.h"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#ab6bb131db1ab53e88dd407d39e989a06"><param name="Name" value="shutdownHandler"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#ab6bb131db1ab53e88dd407d39e989a06"><param name="Name" value="server.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8h.html#ab6bb131db1ab53e88dd407d39e989a06"><param name="Name" value="server.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#adeadf7cb6916a10c7142ce7d265ab32a"><param name="Name" value="socket_desc"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#ad43b436f38b6543a54dc74559fe7be11"><param name="Name" value="SRV_ADDR"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#aee1132b8a79e9a6dd0d19a93f7133389"><param name="Name" value="SRV_PORT"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#aee1132b8a79e9a6dd0d19a93f7133389"><param name="Name" value="defines.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#aee1132b8a79e9a6dd0d19a93f7133389"><param name="Name" value="server.c"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a176eb2b5c4900db14801860a5d7a0857a9922a43d37bee3212593f77ce4ec82f3"><param name="Name" value="temperature"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="server_8c.html#ab946e2e7f7679350627acfded8e2658b"><param name="Name" value="TEST"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#a380ce63b151a8118e69bcaa34f731958a08f175a5505a10b9ed657defeb050e4b"><param name="Name" value="true"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="defines_8h.html#ab485e71594add692a01e9b87963e0e34a15edc24cdf7dea17a43c6c50580eba2b"><param name="Name" value="update"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="struct_reading__t.html#ac4f474c82e82cbb89ca7c36dd52be0ed"><param name="Name" value="value"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a5a10276da8ff70ec0f44dfdbbda8e8b3"><param name="Name" value="writeConfig"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a5a10276da8ff70ec0f44dfdbbda8e8b3"><param name="Name" value="xml.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8h.html#a5a10276da8ff70ec0f44dfdbbda8e8b3"><param name="Name" value="xml.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8c.html#adb296d69ad81a26650f6478eb63c78bc"><param name="Name" value="writeSocket"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8c.html#adb296d69ad81a26650f6478eb63c78bc"><param name="Name" value="net.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="net_8h.html#adb296d69ad81a26650f6478eb63c78bc"><param name="Name" value="net.h"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html"><param name="Name" value="xml.c"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a397bd0803103d9d6a9ba58ada6845307"><param name="Name" value="buildReplyXML"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a40c4d4b938104b27b9d740ae5fcc0640"><param name="Name" value="buildRequestXML"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#ac88a4185c09ac0664d9d747f99a784c6"><param name="Name" value="readConfig"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a6c45ab1ab93ccb893b64ed84e091ffd5"><param name="Name" value="readings"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8c.html#a5a10276da8ff70ec0f44dfdbbda8e8b3"><param name="Name" value="writeConfig"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8h.html"><param name="Name" value="xml.h"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8h.html#a397bd0803103d9d6a9ba58ada6845307"><param name="Name" value="buildReplyXML"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8h.html#a40c4d4b938104b27b9d740ae5fcc0640"><param name="Name" value="buildRequestXML"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8h.html#ac88a4185c09ac0664d9d747f99a784c6"><param name="Name" value="readConfig"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="xml_8h.html#a5a10276da8ff70ec0f44dfdbbda8e8b3"><param name="Name" value="writeConfig"></OBJECT>
+  </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Local" value="client_2src_2tests_2test_8c.html#a34ff7ae2801158f3bea3fbd06b2c0a33"><param name="Name" value="xml_test"></OBJECT>
+  <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="client_2src_2tests_2test_8c.html#a34ff7ae2801158f3bea3fbd06b2c0a33"><param name="Name" value="client/src/tests/test.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="client_2src_2tests_2test_8h.html#a34ff7ae2801158f3bea3fbd06b2c0a33"><param name="Name" value="client/src/tests/test.h"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_2src_2tests_2test_8c.html#a34ff7ae2801158f3bea3fbd06b2c0a33"><param name="Name" value="server/src/tests/test.c"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Local" value="server_2src_2tests_2test_8h.html#a34ff7ae2801158f3bea3fbd06b2c0a33"><param name="Name" value="server/src/tests/test.h"></OBJECT>
+  </UL>
+</UL>
+</BODY>
+</HTML>

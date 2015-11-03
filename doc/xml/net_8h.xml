@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="net_8h" kind="file">
+    <compoundname>net.h</compoundname>
+    <includes refid="defines_8h" local="yes">defines.h</includes>
+    <includedby refid="client_8c" local="yes">client/src/client.c</includedby>
+    <includedby refid="net_8c" local="yes">common/net.c</includedby>
+    <includedby refid="server_8c" local="yes">server/src/server.c</includedby>
+    <incdepgraph>
+      <node id="81">
+        <label>stdint.h</label>
+      </node>
+      <node id="80">
+        <label>stdlib.h</label>
+      </node>
+      <node id="79">
+        <label>defines.h</label>
+        <link refid="defines_8h"/>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>string.h</label>
+      </node>
+      <node id="78">
+        <label>common/net.h</label>
+        <link refid="net.h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="85">
+        <label>client/src/client.c</label>
+        <link refid="client_8c"/>
+      </node>
+      <node id="86">
+        <label>common/net.c</label>
+        <link refid="net_8c"/>
+      </node>
+      <node id="84">
+        <label>common/net.h</label>
+        <link refid="net.h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>server/src/server.c</label>
+        <link refid="server_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="net_8h_1aebe97308412c97831f443fb38699c946" prot="public" static="no">
+        <name>PROTOCOL_TYPE</name>
+        <initializer>SOCK_STREAM</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/net.h" line="14" column="9" bodyfile="/home/strikles/workspace/common/net.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="client_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="client_8c" startline="31" endline="98">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="net_8h_1a5648e23ffc8afb543a41ca08b252e2c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int readSocket</definition>
+        <argsstring>(int sock, char recvline[])</argsstring>
+        <name>readSocket</name>
+        <param>
+          <type>int</type>
+          <declname>sock</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>recvline</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>recvline</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>invalid_status</para></simplesect>
+Read from Socket </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/net.h" line="25" column="1" bodyfile="/home/strikles/workspace/common/net.c" bodystart="24" bodyend="53"/>
+        <references refid="defines_8h_1a51d90ea93d4b55e086cb490f7478e684" compoundref="defines_8h" startline="14">MAX_MSG_LEN</references>
+        <referencedby refid="client_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="client_8c" startline="31" endline="98">main</referencedby>
+        <referencedby refid="server_8h_1a99c88edc68ebbf9b09eabca690a3b515" compoundref="server_8c" startline="113" endline="164">connection_handler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1adb296d69ad81a26650f6478eb63c78bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int writeSocket</definition>
+        <argsstring>(int sock, char sendline[])</argsstring>
+        <name>writeSocket</name>
+        <param>
+          <type>int</type>
+          <declname>sock</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>sendline</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendline</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>invalid_status</para></simplesect>
+Write to socket </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/net.h" line="33" column="1" bodyfile="/home/strikles/workspace/common/net.c" bodystart="58" bodyend="80"/>
+        <references refid="defines_8h_1a51d90ea93d4b55e086cb490f7478e684" compoundref="defines_8h" startline="14">MAX_MSG_LEN</references>
+        <referencedby refid="client_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="client_8c" startline="31" endline="98">main</referencedby>
+        <referencedby refid="server_8h_1a99c88edc68ebbf9b09eabca690a3b515" compoundref="server_8c" startline="113" endline="164">connection_handler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="net_8h_1a7e8fd0c8a9ece620618794b18387aa99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int connectToServer</definition>
+        <argsstring>(void *sock_desc)</argsstring>
+        <name>connectToServer</name>
+        <param>
+          <type>void *</type>
+          <declname>sock_desc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sock_desc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>invalid_status</para></simplesect>
+Connect to Sever </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/net.h" line="40" column="1" bodyfile="/home/strikles/workspace/common/net.c" bodystart="85" bodyend="101"/>
+        <references refid="defines_8h_1aee1132b8a79e9a6dd0d19a93f7133389" compoundref="defines_8h" startline="15">SRV_PORT</references>
+        <references refid="defines_8h_1ad43b436f38b6543a54dc74559fe7be11" compoundref="defines_8h" startline="16">SRV_ADDR</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>networking common net definitions </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Claudio Neto</para></simplesect>
+<simplesect kind="date"><para>3/11/2015 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>NET_H_</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NET_H_</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="net_8h_1aebe97308412c97831f443fb38699c946" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROTOCOL_TYPE<sp/>SOCK_STREAM</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="comment">//#define<sp/>PROTOCOL_TYPE<sp/>SOCK_DGRAM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="defines_8h" kindref="compound">defines.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a5648e23ffc8afb543a41ca08b252e2c6" kindref="member">readSocket</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sock,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>recvline[]);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="net_8h_1adb296d69ad81a26650f6478eb63c78bc" kindref="member">writeSocket</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sock,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>sendline[]);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="net_8h_1a7e8fd0c8a9ece620618794b18387aa99" kindref="member">connectToServer</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>sock_desc);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>NET_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/strikles/workspace/common/net.h"/>
+  </compounddef>
+</doxygen>

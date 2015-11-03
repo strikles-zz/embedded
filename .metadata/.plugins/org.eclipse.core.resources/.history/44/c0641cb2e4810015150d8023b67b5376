@@ -1,0 +1,16 @@
+/*
+ * xml.h
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+#ifndef XML_H_
+#define XML_H_
+
+#include "defines.h"
+
+uint16_t buildReplyXML(char recvline[], char sendline[], size_t read_size);
+uint16_t buildRequestXML(eRequest req, char sendline[]);
+
+#endif /* XML_H_ */

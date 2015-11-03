@@ -1,0 +1,17 @@
+/*
+ * net.h
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+#ifndef NET_H_
+#define NET_H_
+
+#include "defines.h"
+
+uint16_t readSocket(int sock, char buffer[]);
+uint16_t writeSocket(int sock, char buffer[]);
+
+
+#endif /* NET_H_ */

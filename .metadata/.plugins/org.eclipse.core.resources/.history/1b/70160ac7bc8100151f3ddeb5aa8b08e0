@@ -1,0 +1,13 @@
+/*
+ * sensors.h
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+#ifndef SENSORS_H_
+#define SENSORS_H_
+
+#include "defines.h"
+
+#endif /* SENSORS_H_ */

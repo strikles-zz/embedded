@@ -1,0 +1,197 @@
+.TH "common/defines.h" 3 "Tue Nov 3 2015" "Version 0.0.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+common/defines.h \- 
+.PP
+defines common definitions  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <stdint\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBReading_t\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMAX_MSG_LEN\fP   1024"
+.br
+.ti -1c
+.RI "#define \fBSRV_PORT\fP   6423"
+.br
+.ti -1c
+.RI "#define \fBSRV_ADDR\fP   '127\&.0\&.0\&.1'"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBeBool\fP { \fBtrue\fP, \fBfalse\fP }"
+.br
+.ti -1c
+.RI "enum \fBeRequest\fP { \fBconfigure\fP, \fBretrieve\fP, \fBupdate\fP }"
+.br
+.ti -1c
+.RI "enum \fBeBrightness\fP { \fBdark\fP, \fBaverage\fP, \fBbright\fP, \fBmax_brightness_levels\fP }"
+.br
+.ti -1c
+.RI "enum \fBeSensor\fP { \fBbattery\fP, \fBbrightness\fP, \fBhumidity\fP, \fBnoise\fP, \fBpersonsPassed\fP, \fBtemperature\fP, \fBmax_sensors\fP }"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const char const * \fBrequest_str\fP []"
+.br
+.ti -1c
+.RI "const char const * \fBbrightness_str\fP []"
+.br
+.ti -1c
+.RI "const char const * \fBsensor_str\fP []"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+defines common definitions 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Claudio Neto
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+3/11/2015 
+.RE
+.PP
+
+.PP
+Definition in file \fBdefines\&.h\fP\&.
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define MAX_MSG_LEN   1024"
+
+.PP
+Definition at line 14 of file defines\&.h\&.
+.SS "#define SRV_ADDR   '127\&.0\&.0\&.1'"
+
+.PP
+Definition at line 16 of file defines\&.h\&.
+.SS "#define SRV_PORT   6423"
+
+.PP
+Definition at line 15 of file defines\&.h\&.
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBeBool\fP"
+true - false enum 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fItrue \fP\fP
+true 
+.TP
+\fB\fIfalse \fP\fP
+false 
+.PP
+Definition at line 26 of file defines\&.h\&.
+.SS "enum \fBeBrightness\fP"
+brightness levels 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIdark \fP\fP
+dark 
+.TP
+\fB\fIaverage \fP\fP
+average 
+.TP
+\fB\fIbright \fP\fP
+bright 
+.TP
+\fB\fImax_brightness_levels \fP\fP
+max_brightness_levels 
+.PP
+Definition at line 43 of file defines\&.h\&.
+.SS "enum \fBeRequest\fP"
+request types 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIconfigure \fP\fP
+generate configuration xml 
+.TP
+\fB\fIretrieve \fP\fP
+retrieve data 
+.TP
+\fB\fIupdate \fP\fP
+update data 
+.PP
+Definition at line 34 of file defines\&.h\&.
+.SS "enum \fBeSensor\fP"
+the various mock sensors 
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIbattery \fP\fP
+battery 
+.TP
+\fB\fIbrightness \fP\fP
+brightness 
+.TP
+\fB\fIhumidity \fP\fP
+humidity 
+.TP
+\fB\fInoise \fP\fP
+noise 
+.TP
+\fB\fIpersonsPassed \fP\fP
+personsPassed 
+.TP
+\fB\fItemperature \fP\fP
+temperature 
+.TP
+\fB\fImax_sensors \fP\fP
+max_sensors 
+.PP
+Definition at line 53 of file defines\&.h\&.
+.SH "Variable Documentation"
+.PP 
+.SS "const char const* brightness_str[]"
+
+.PP
+Definition at line 19 of file defines\&.c\&.
+.SS "const char const* request_str[]"
+
+.PP
+Definition at line 13 of file defines\&.c\&.
+.SS "const char const* sensor_str[]"
+
+.PP
+Definition at line 26 of file defines\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

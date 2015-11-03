@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_b565d458ba0ce2faccd0ea2cd60c04eb" kind="dir">
+    <compoundname>client/src</compoundname>
+    <innerdir refid="dir_de811b7ffca0e00882b9157b28f28080">client/src/tests</innerdir>
+    <innerfile refid="client_8c">client.c</innerfile>
+    <innerfile refid="client_8h">client.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/strikles/workspace/client/src/"/>
+  </compounddef>
+</doxygen>

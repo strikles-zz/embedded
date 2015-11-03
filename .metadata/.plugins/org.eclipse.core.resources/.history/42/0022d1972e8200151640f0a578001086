@@ -1,0 +1,16 @@
+/*
+ * server.h
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+#ifndef SERVER_H_
+#define SERVER_H_
+
+//the thread function
+void *connection_handler(void *);
+void shutdownHandler(int s);
+void exitHandler();
+
+#endif /* SERVER_H_ */

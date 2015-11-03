@@ -1,0 +1,100 @@
+\section{common/xml.c File Reference}
+\label{xml_8c}\index{common/xml.\-c@{common/xml.\-c}}
+
+
+xml xml parsing helpers  
+
+
+{\ttfamily \#include \char`\"{}ezxml.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}defines.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}xml.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}sensors.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\-\_\-t {\bf build\-Reply\-X\-M\-L} (char recvline[$\,$], char sendline[$\,$], size\-\_\-t read\-\_\-size)
+\item 
+uint16\-\_\-t {\bf build\-Request\-X\-M\-L} ({\bf e\-Request} req, char sendline[$\,$])
+\item 
+int {\bf write\-Config} ()
+\item 
+int {\bf read\-Config} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile {\bf Reading\-\_\-t} {\bf readings} [{\bf max\-\_\-sensors}]
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+xml xml parsing helpers \begin{DoxyAuthor}{Author}
+Claudio Neto
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+3/11/2015 
+\end{DoxyDate}
+
+
+Definition in file {\bf xml.\-c}.
+
+
+
+\subsection{Function Documentation}
+\index{xml.\-c@{xml.\-c}!build\-Reply\-X\-M\-L@{build\-Reply\-X\-M\-L}}
+\index{build\-Reply\-X\-M\-L@{build\-Reply\-X\-M\-L}!xml.c@{xml.\-c}}
+\subsubsection[{build\-Reply\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t build\-Reply\-X\-M\-L (
+\begin{DoxyParamCaption}
+\item[{char}]{recvline[$\,$], }
+\item[{char}]{sendline[$\,$], }
+\item[{size\-\_\-t}]{read\-\_\-size}
+\end{DoxyParamCaption}
+)}\label{xml_8c_a397bd0803103d9d6a9ba58ada6845307}
+Build Server reply X\-M\-L 
+
+Definition at line 22 of file xml.\-c.
+
+\index{xml.\-c@{xml.\-c}!build\-Request\-X\-M\-L@{build\-Request\-X\-M\-L}}
+\index{build\-Request\-X\-M\-L@{build\-Request\-X\-M\-L}!xml.c@{xml.\-c}}
+\subsubsection[{build\-Request\-X\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t build\-Request\-X\-M\-L (
+\begin{DoxyParamCaption}
+\item[{{\bf e\-Request}}]{req, }
+\item[{char}]{sendline[$\,$]}
+\end{DoxyParamCaption}
+)}\label{xml_8c_a40c4d4b938104b27b9d740ae5fcc0640}
+builds a client xml request (update/retrieve) 
+
+Definition at line 117 of file xml.\-c.
+
+\index{xml.\-c@{xml.\-c}!read\-Config@{read\-Config}}
+\index{read\-Config@{read\-Config}!xml.c@{xml.\-c}}
+\subsubsection[{read\-Config}]{\setlength{\rightskip}{0pt plus 5cm}int read\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{xml_8c_ac88a4185c09ac0664d9d747f99a784c6}
+Load Reading from file 
+
+Definition at line 226 of file xml.\-c.
+
+\index{xml.\-c@{xml.\-c}!write\-Config@{write\-Config}}
+\index{write\-Config@{write\-Config}!xml.c@{xml.\-c}}
+\subsubsection[{write\-Config}]{\setlength{\rightskip}{0pt plus 5cm}int write\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{xml_8c_a5a10276da8ff70ec0f44dfdbbda8e8b3}
+Save readings to file 
+
+Definition at line 198 of file xml.\-c.
+
+
+
+\subsection{Variable Documentation}
+\index{xml.\-c@{xml.\-c}!readings@{readings}}
+\index{readings@{readings}!xml.c@{xml.\-c}}
+\subsubsection[{readings}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf Reading\-\_\-t} readings[{\bf max\-\_\-sensors}]}\label{xml_8c_a6c45ab1ab93ccb893b64ed84e091ffd5}
+
+
+Definition at line 13 of file sensors.\-c.
+

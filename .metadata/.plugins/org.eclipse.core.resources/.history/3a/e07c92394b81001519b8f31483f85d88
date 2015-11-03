@@ -1,0 +1,30 @@
+/*
+ * sensors.h
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+#ifndef SENSORS_H_
+#define SENSORS_H_
+
+// brightness
+typedef enum {
+	dark,
+	average,
+	bright,
+	max_brightness_levels
+}  eBrightness;
+
+// sensors
+typedef enum {
+	battery,
+	brightness,
+	humidity,
+	noise,
+	personsPassed,
+	temperature,
+	max_sensors
+} eSensor;
+
+#endif /* SENSORS_H_ */

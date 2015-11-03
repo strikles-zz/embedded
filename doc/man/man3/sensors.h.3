@@ -1,0 +1,96 @@
+.TH "common/sensors.h" 3 "Tue Nov 3 2015" "Version 0.0.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+common/sensors.h \- 
+.PP
+mock sensors common mock sensors definitions  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'defines\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBgetSensorReadingStr\fP (\fBeSensor\fP s, char buffer[])"
+.br
+.ti -1c
+.RI "int \fBnewMeasurement\fP (\fBeSensor\fP s)"
+.br
+.ti -1c
+.RI "uint16_t \fBgenerateMeasurements\fP (void)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+mock sensors common mock sensors definitions 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Claudio Neto
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+3/11/2015 
+.RE
+.PP
+
+.PP
+Definition in file \fBsensors\&.h\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "uint16_t generateMeasurements (void)"
+helper - loop to generate measurements 
+.PP
+\fBReturns:\fP
+.RS 4
+invalid_status
+.RE
+.PP
+helper - loop to generate measurements 
+.PP
+Definition at line 70 of file sensors\&.c\&.
+.SS "uint16_t getSensorReadingStr (\fBeSensor\fPs, charbuffer[])"
+helper - gets a measurement 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP 
+.br
+\fIbuffer\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+invalid_status
+.RE
+.PP
+helper - gets a measurement 
+.PP
+Definition at line 18 of file sensors\&.c\&.
+.SS "int newMeasurement (\fBeSensor\fPs)"
+helper - sets a random measurement value 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+invalid_status
+.RE
+.PP
+helper - sets a random measurement value 
+.PP
+Definition at line 43 of file sensors\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

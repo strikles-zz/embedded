@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="server_8h" kind="file">
+    <compoundname>server.h</compoundname>
+    <includedby refid="server_8c" local="yes">server/src/server.c</includedby>
+    <invincdepgraph>
+      <node id="150">
+        <label>server/src/server.c</label>
+        <link refid="server_8c"/>
+      </node>
+      <node id="149">
+        <label>server/src/server.h</label>
+        <link refid="server.h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="server_8h_1a99c88edc68ebbf9b09eabca690a3b515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* connection_handler</definition>
+        <argsstring>(void *)</argsstring>
+        <name>connection_handler</name>
+        <param>
+          <type>void *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>new connection handler <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>socket</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>fd </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/server/src/server.h" line="18" column="1" bodyfile="/home/strikles/workspace/server/src/server.c" bodystart="113" bodyend="164"/>
+        <references refid="defines_8h_1a51d90ea93d4b55e086cb490f7478e684" compoundref="defines_8h" startline="14">MAX_MSG_LEN</references>
+        <references refid="net_8c_1a5648e23ffc8afb543a41ca08b252e2c6" compoundref="net_8c" startline="24" endline="53">readSocket</references>
+        <references refid="xml_8c_1a397bd0803103d9d6a9ba58ada6845307" compoundref="xml_8c" startline="22" endline="112">buildReplyXML</references>
+        <references refid="net_8c_1adb296d69ad81a26650f6478eb63c78bc" compoundref="net_8c" startline="58" endline="80">writeSocket</references>
+        <referencedby refid="server_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="server_8c" startline="36" endline="108">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="server_8h_1ab6bb131db1ab53e88dd407d39e989a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shutdownHandler</definition>
+        <argsstring>(int s)</argsstring>
+        <name>shutdownHandler</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>handler for service shutdown <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>signal</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+shutdown handler to write config </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/server/src/server.h" line="24" column="1" bodyfile="/home/strikles/workspace/server/src/server.c" bodystart="177" bodyend="184"/>
+        <references refid="server_8c_1adeadf7cb6916a10c7142ce7d265ab32a" compoundref="server_8c" startline="34">socket_desc</references>
+        <references refid="xml_8c_1a5a10276da8ff70ec0f44dfdbbda8e8b3" compoundref="xml_8c" startline="198" endline="221">writeConfig</references>
+        <references refid="server_8c_1a4a26b396e509e6a65eae2d72ac5a190a" compoundref="server_8c" startline="169" endline="172">exitHandler</references>
+        <referencedby refid="server_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="server_8c" startline="36" endline="108">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="server_8h_1a4a26b396e509e6a65eae2d72ac5a190a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exitHandler</definition>
+        <argsstring>()</argsstring>
+        <name>exitHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unused </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/server/src/server.h" line="29" column="1" bodyfile="/home/strikles/workspace/server/src/server.c" bodystart="169" bodyend="172"/>
+        <referencedby refid="server_8h_1ab6bb131db1ab53e88dd407d39e989a06" compoundref="server_8c" startline="177" endline="184">shutdownHandler</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>server server definitions </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Claudio Neto</para></simplesect>
+<simplesect kind="date"><para>3/11/2015 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>SERVER_H_</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SERVER_H_</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="18"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="server_8h_1a99c88edc68ebbf9b09eabca690a3b515" kindref="member">connection_handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="server_8h_1ab6bb131db1ab53e88dd407d39e989a06" kindref="member">shutdownHandler</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="server_8h_1a4a26b396e509e6a65eae2d72ac5a190a" kindref="member">exitHandler</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SERVER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/strikles/workspace/server/src/server.h"/>
+  </compounddef>
+</doxygen>

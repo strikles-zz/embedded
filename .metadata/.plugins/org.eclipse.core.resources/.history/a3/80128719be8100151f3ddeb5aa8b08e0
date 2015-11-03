@@ -1,0 +1,198 @@
+/*
+ * xml.c
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+
+#include "ezxml.h"
+#include "xml.h"
+#include "sensors.h"
+
+extern Reading_t readings[max_sensors];
+
+/**
+ * Validates Request
+ */
+uint16_t validRequest(ezxml_t req_root)
+{
+	char* sensor_name;
+	int sensor_ndx, found_sensor, valid_status;
+	ezxml_t sensor;
+
+	printf("init validRequest\n");
+	valid_status = 1;
+
+	if(!req_root)
+	{
+		perror("validRequest - invalid root param");
+		return 1;
+	}
+
+    for (sensor = req_root->child; sensor; sensor = sensor->next)
+    {
+    	found_sensor = 0;
+    	sensor_name = ezxml_name(sensor);
+    	for(sensor_ndx = 0; sensor_ndx < max_sensors; ++sensor_ndx)
+    	{
+    		printf("%s %d : %s %d\n",
+				sensor_name, strlen(sensor_name),
+				sensor_str[sensor_ndx], strlen(sensor_str[sensor_ndx]));
+
+    		if(0 == strncmp(sensor_str[sensor_ndx], sensor_name, strlen(sensor_name)))
+    	    {
+    	        found_sensor = 1;
+    	        break;
+    	    }
+    	}
+
+    	// invalid request - property does not exist
+    	if(0 == found_sensor)
+    	{
+    		printf("Property does not exist: %s\n", sensor_name);
+    		valid_status = 0;
+    		//free(measurement_name);
+    		break;
+    	}
+    }
+
+	return valid_status;
+}
+
+/**
+ * Build Server reply XML
+ */
+uint16_t buildReplyXML(ezxml_t req_root, char sendline[])
+{
+	printf("init Building XML \n");
+	ezxml_t root, sensor;
+	char* sensor_name;
+	char* status_xml;
+	char* req_type;
+	char* sensor_value;
+	int sensor_ndx, xml_size, valid_status;
+
+	xml_size = 0;
+	valid_status = 1;
+	root = ezxml_new("status");
+	req_type = ezxml_name(req_root);
+
+    for (sensor = req_root->child; sensor; sensor = sensor->next)
+    {
+    	sensor_name = ezxml_name(sensor);
+    	for(sensor_ndx = 0; sensor_ndx < max_sensors; ++sensor_ndx)
+    	{
+    		//found our match
+    	    if(0 == strncmp(sensor_str[sensor_ndx], sensor_name, strlen(sensor_name)))
+    	    {
+    	    	// update value
+    	    	sensor_value = ezxml_txt(sensor);
+    	    	if(0 == strncmp(req_type, "update", strlen("update")-1))
+    	    	{
+					readings[sensor_ndx].value = atoi(sensor_value);
+    	    	}
+
+    	    	// add tag
+    	    	ezxml_t child_tag = ezxml_add_child(root, sensor_name, 4);
+    	    	ezxml_set_txt(child_tag, sensor_value);
+
+    	        break;
+    	    }
+    	}
+    	//free(measurement_name);
+    }
+
+    status_xml = ezxml_toxml(root);
+    xml_size = strlen(status_xml)+1;
+	if(MAX_MSG_LEN < xml_size)
+	{
+		valid_status = 0;
+	}
+	else
+	{
+		printf("XML: %s\n", status_xml);
+		memcpy(sendline, status_xml, xml_size);
+	}
+
+	free(status_xml);
+	ezxml_free(root);
+
+    return valid_status;
+}
+
+/**
+ * builds a client xml request (update/retrieve)
+ */
+uint16_t buildRequestXML(eRequest req, char xml_buffer[])
+{
+	uint16_t ndx, error_status;
+	int xml_size;
+	char reading_buffer[255];
+
+	ezxml_t request_root = ezxml_new(request_str[req]);
+    if(!request_root)
+    {
+    	perror("Invalid request_root xml\n");
+    	return 1;
+    }
+
+	// generate some random stuff
+	for(ndx = 0; ndx < max_sensors; ndx++)
+	{
+		// test measurememt list ndx
+		// test measurement type ndx
+
+		// nothing to read
+		if(readings[ndx].elapsed < readings[ndx].interval)
+		{
+			continue;
+		}
+
+		// reset buffer
+		bzero(reading_buffer, 255);
+
+		// Insert child_tag into root_tag
+		ezxml_t child_tag = ezxml_add_child_d(request_root, sensor_str[ndx], 4);
+		// text child_tag
+
+		// copy measurement value to our char buffer
+		error_status = getSensorReadingStr(ndx, reading_buffer);
+        if(error_status)
+        {
+        	perror("Error: getSensorReadingStr\n");
+        	continue;
+        }
+
+		// set the tag content
+		ezxml_set_txt_d(child_tag, reading_buffer);
+		// test valid return
+
+		printf("Reading Buffer: %s\n", reading_buffer);
+	}
+
+	// get string into buffer
+	char *xml = ezxml_toxml(request_root);
+    if(!xml)
+    {
+    	perror("client generated Invalid xml\n");
+    	return 1;
+    }
+
+    // test length
+	xml_size = strlen(xml)+1;
+	if(MAX_MSG_LEN < xml_size)
+	{
+		perror("client xml is too long\n");
+		return 1;
+	}
+
+	bzero(xml_buffer, MAX_MSG_LEN);
+	memcpy(xml_buffer, xml, xml_size);
+
+	// free stuff
+	ezxml_free(request_root);
+	free(xml);
+
+	return 0;
+}

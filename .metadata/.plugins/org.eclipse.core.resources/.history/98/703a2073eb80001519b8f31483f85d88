@@ -1,0 +1,67 @@
+/*
+ * client.h
+ *
+ *  Created on: Nov 1, 2015
+ *      Author: strikles
+ */
+
+#ifndef CLIENT_H_
+#define CLIENT_H_
+
+
+
+typedef enum {
+	true,
+	false
+} Bool_t;
+
+typedef enum {
+	retrieve,
+	update
+} Request_t;
+
+typedef enum {
+	dark,
+	average,
+	bright,
+	max_brightness_levels
+}  Brightness_t;
+
+typedef enum {
+	brightness,
+	humidity,
+	noise,
+	personsPassed,
+	temperature,
+	max_measurements
+} Measurement_t;
+
+#define CLI_MODE update;
+
+const char* request_types[] = {
+	"retrieve",
+	"update"
+};
+
+const char* brightness_levels[] = {
+	"dark",
+	"average",
+	"bright",
+	"max_brightness_levels"
+};
+
+const char* measurement_types[] = {
+	"brightness",
+	"humidity",
+	"noise",
+	"personsPassed",
+	"temperature",
+	"max_measurements"
+};
+
+int buildRequestXML(ezxml_t request_root);
+int newMeasurement(Measurement_t m);
+short getMeasurement(Measurement_t m);
+void generateMeasurements();
+
+#endif /* CLIENT_H_ */

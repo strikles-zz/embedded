@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="xml_8h" kind="file">
+    <compoundname>xml.h</compoundname>
+    <includes refid="defines_8h" local="yes">defines.h</includes>
+    <includedby refid="client_8c" local="yes">client/src/client.c</includedby>
+    <includedby refid="xml_8c" local="yes">common/xml.c</includedby>
+    <includedby refid="server_8c" local="yes">server/src/server.c</includedby>
+    <incdepgraph>
+      <node id="120">
+        <label>stdint.h</label>
+      </node>
+      <node id="119">
+        <label>stdlib.h</label>
+      </node>
+      <node id="118">
+        <label>defines.h</label>
+        <link refid="defines_8h"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>string.h</label>
+      </node>
+      <node id="117">
+        <label>common/xml.h</label>
+        <link refid="xml.h"/>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="124">
+        <label>client/src/client.c</label>
+        <link refid="client_8c"/>
+      </node>
+      <node id="125">
+        <label>common/xml.c</label>
+        <link refid="xml_8c"/>
+      </node>
+      <node id="123">
+        <label>common/xml.h</label>
+        <link refid="xml.h"/>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>server/src/server.c</label>
+        <link refid="server_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="xml_8h_1a397bd0803103d9d6a9ba58ada6845307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t buildReplyXML</definition>
+        <argsstring>(char recvline[], char sendline[], size_t read_size)</argsstring>
+        <name>buildReplyXML</name>
+        <param>
+          <type>char</type>
+          <declname>recvline</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>sendline</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>read_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Builds XML <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recvline</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendline</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>read_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>invalid_status</para></simplesect>
+Build Server reply XML </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/xml.h" line="23" column="1" bodyfile="/home/strikles/workspace/common/xml.c" bodystart="22" bodyend="112"/>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c" compoundref="defines_8h" startline="60">max_sensors</references>
+        <references refid="defines_8c_1aa1c2df433b41481f1dee5aa6519df290" compoundref="defines_8c" startline="26">sensor_str</references>
+        <references refid="struct_reading__t_1ac4f474c82e82cbb89ca7c36dd52be0ed" compoundref="defines_8h" startline="67">Reading_t::value</references>
+        <references refid="defines_8h_1a51d90ea93d4b55e086cb490f7478e684" compoundref="defines_8h" startline="14">MAX_MSG_LEN</references>
+        <referencedby refid="server_8h_1a99c88edc68ebbf9b09eabca690a3b515" compoundref="server_8c" startline="113" endline="164">connection_handler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml_8h_1a40c4d4b938104b27b9d740ae5fcc0640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t buildRequestXML</definition>
+        <argsstring>(eRequest req, char sendline[])</argsstring>
+        <name>buildRequestXML</name>
+        <param>
+          <type><ref refid="defines_8h_1ab485e71594add692a01e9b87963e0e34" kindref="member">eRequest</ref></type>
+          <declname>req</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>sendline</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>builds a client xml request (update/retrieve) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendline</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>invalid_status</para></simplesect>
+builds a client xml request (update/retrieve) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/xml.h" line="31" column="1" bodyfile="/home/strikles/workspace/common/xml.c" bodystart="117" bodyend="193"/>
+        <references refid="defines_8c_1a3a6251b9cae8d7da3cec393b23df3228" compoundref="defines_8c" startline="13">request_str</references>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c" compoundref="defines_8h" startline="60">max_sensors</references>
+        <references refid="defines_8h_1ab485e71594add692a01e9b87963e0e34a983aedd7cd1f52c07d1e8e4804287cef" compoundref="defines_8h" startline="35">configure</references>
+        <references refid="sensors_8c_1a06f41875c9c55c4e531cc8b25fb9b427" compoundref="sensors_8c" startline="18" endline="38">getSensorReadingStr</references>
+        <references refid="defines_8c_1aa1c2df433b41481f1dee5aa6519df290" compoundref="defines_8c" startline="26">sensor_str</references>
+        <references refid="defines_8h_1a51d90ea93d4b55e086cb490f7478e684" compoundref="defines_8h" startline="14">MAX_MSG_LEN</references>
+        <referencedby refid="client_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="client_8c" startline="31" endline="98">main</referencedby>
+        <referencedby refid="xml_8h_1a5a10276da8ff70ec0f44dfdbbda8e8b3" compoundref="xml_8c" startline="198" endline="221">writeConfig</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml_8h_1a5a10276da8ff70ec0f44dfdbbda8e8b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int writeConfig</definition>
+        <argsstring>()</argsstring>
+        <name>writeConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Save readings to file <simplesect kind="return"><para>invalid_status</para></simplesect>
+Save readings to file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/xml.h" line="37" column="1" bodyfile="/home/strikles/workspace/common/xml.c" bodystart="198" bodyend="221"/>
+        <references refid="defines_8h_1a51d90ea93d4b55e086cb490f7478e684" compoundref="defines_8h" startline="14">MAX_MSG_LEN</references>
+        <references refid="xml_8c_1a40c4d4b938104b27b9d740ae5fcc0640" compoundref="xml_8c" startline="117" endline="193">buildRequestXML</references>
+        <references refid="defines_8h_1ab485e71594add692a01e9b87963e0e34a983aedd7cd1f52c07d1e8e4804287cef" compoundref="defines_8h" startline="35">configure</references>
+        <referencedby refid="server_8h_1ab6bb131db1ab53e88dd407d39e989a06" compoundref="server_8c" startline="177" endline="184">shutdownHandler</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="xml_8h_1ac88a4185c09ac0664d9d747f99a784c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int readConfig</definition>
+        <argsstring>()</argsstring>
+        <name>readConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load Reading from file <simplesect kind="return"><para>invalid_status</para></simplesect>
+Load Reading from file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/xml.h" line="43" column="1" bodyfile="/home/strikles/workspace/common/xml.c" bodystart="226" bodyend="266"/>
+        <references refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c" compoundref="defines_8h" startline="60">max_sensors</references>
+        <references refid="defines_8c_1aa1c2df433b41481f1dee5aa6519df290" compoundref="defines_8c" startline="26">sensor_str</references>
+        <references refid="struct_reading__t_1ac4f474c82e82cbb89ca7c36dd52be0ed" compoundref="defines_8h" startline="67">Reading_t::value</references>
+        <referencedby refid="server_8c_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="server_8c" startline="36" endline="108">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>xml xml parsing helpers </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Claudio Neto</para></simplesect>
+<simplesect kind="date"><para>3/11/2015 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>XML_H_</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>XML_H_</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="defines_8h" kindref="compound">defines.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">uint16_t<sp/><ref refid="xml_8h_1a397bd0803103d9d6a9ba58ada6845307" kindref="member">buildReplyXML</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>recvline[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>sendline[],<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>read_size);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">uint16_t<sp/><ref refid="xml_8h_1a40c4d4b938104b27b9d740ae5fcc0640" kindref="member">buildRequestXML</ref>(<ref refid="defines_8h_1ab485e71594add692a01e9b87963e0e34" kindref="member">eRequest</ref><sp/>req,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>sendline[]);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml_8h_1a5a10276da8ff70ec0f44dfdbbda8e8b3" kindref="member">writeConfig</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="xml_8h_1ac88a4185c09ac0664d9d747f99a784c6" kindref="member">readConfig</ref>();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>XML_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/strikles/workspace/common/xml.h"/>
+  </compounddef>
+</doxygen>

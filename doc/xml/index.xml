@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="struct_reading__t" kind="struct"><name>Reading_t</name>
+    <member refid="struct_reading__t_1ac4f474c82e82cbb89ca7c36dd52be0ed" kind="variable"><name>value</name></member>
+    <member refid="struct_reading__t_1a4bd3978f9fa83a0e08225dca54a00eb6" kind="variable"><name>elapsed</name></member>
+    <member refid="struct_reading__t_1ae0c690118932b32ef40a74bb6a259acd" kind="variable"><name>interval</name></member>
+  </compound>
+  <compound refid="client_8c" kind="file"><name>client.c</name>
+    <member refid="client_8c_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="client_8h" kind="file"><name>client.h</name>
+  </compound>
+  <compound refid="client_2src_2tests_2test_8c" kind="file"><name>test.c</name>
+    <member refid="client_2src_2tests_2test_8c_1a34ff7ae2801158f3bea3fbd06b2c0a33" kind="function"><name>xml_test</name></member>
+  </compound>
+  <compound refid="server_2src_2tests_2test_8c" kind="file"><name>test.c</name>
+    <member refid="server_2src_2tests_2test_8c_1a34ff7ae2801158f3bea3fbd06b2c0a33" kind="function"><name>xml_test</name></member>
+  </compound>
+  <compound refid="client_2src_2tests_2test_8h" kind="file"><name>test.h</name>
+    <member refid="client_2src_2tests_2test_8h_1a34ff7ae2801158f3bea3fbd06b2c0a33" kind="function"><name>xml_test</name></member>
+  </compound>
+  <compound refid="server_2src_2tests_2test_8h" kind="file"><name>test.h</name>
+    <member refid="server_2src_2tests_2test_8h_1a34ff7ae2801158f3bea3fbd06b2c0a33" kind="function"><name>xml_test</name></member>
+  </compound>
+  <compound refid="defines_8c" kind="file"><name>defines.c</name>
+    <member refid="defines_8c_1a3a6251b9cae8d7da3cec393b23df3228" kind="variable"><name>request_str</name></member>
+    <member refid="defines_8c_1aa66266408de980f8f70d74c36e24ef9c" kind="variable"><name>brightness_str</name></member>
+    <member refid="defines_8c_1aa1c2df433b41481f1dee5aa6519df290" kind="variable"><name>sensor_str</name></member>
+  </compound>
+  <compound refid="defines_8h" kind="file"><name>defines.h</name>
+    <member refid="defines_8h_1a51d90ea93d4b55e086cb490f7478e684" kind="define"><name>MAX_MSG_LEN</name></member>
+    <member refid="defines_8h_1aee1132b8a79e9a6dd0d19a93f7133389" kind="define"><name>SRV_PORT</name></member>
+    <member refid="defines_8h_1ad43b436f38b6543a54dc74559fe7be11" kind="define"><name>SRV_ADDR</name></member>
+    <member refid="defines_8h_1a380ce63b151a8118e69bcaa34f731958" kind="enum"><name>eBool</name></member>
+    <member refid="defines_8h_1a380ce63b151a8118e69bcaa34f731958a08f175a5505a10b9ed657defeb050e4b" kind="enumvalue"><name>true</name></member>
+    <member refid="defines_8h_1a380ce63b151a8118e69bcaa34f731958ae9de385ef6fe9bf3360d1038396b884c" kind="enumvalue"><name>false</name></member>
+    <member refid="defines_8h_1ab485e71594add692a01e9b87963e0e34" kind="enum"><name>eRequest</name></member>
+    <member refid="defines_8h_1ab485e71594add692a01e9b87963e0e34a983aedd7cd1f52c07d1e8e4804287cef" kind="enumvalue"><name>configure</name></member>
+    <member refid="defines_8h_1ab485e71594add692a01e9b87963e0e34af410ad0732b2aec7b579eb0084a2a1fd" kind="enumvalue"><name>retrieve</name></member>
+    <member refid="defines_8h_1ab485e71594add692a01e9b87963e0e34a15edc24cdf7dea17a43c6c50580eba2b" kind="enumvalue"><name>update</name></member>
+    <member refid="defines_8h_1a74537517bf20d5af522adc27a07dff0b" kind="enum"><name>eBrightness</name></member>
+    <member refid="defines_8h_1a74537517bf20d5af522adc27a07dff0baa576f04a6a2d8acc5c52fe798875dc07" kind="enumvalue"><name>dark</name></member>
+    <member refid="defines_8h_1a74537517bf20d5af522adc27a07dff0bae478d4d7f90177e87ed05369ad732b25" kind="enumvalue"><name>average</name></member>
+    <member refid="defines_8h_1a74537517bf20d5af522adc27a07dff0baadf74e9a8193f92c453d072e4b3584a1" kind="enumvalue"><name>bright</name></member>
+    <member refid="defines_8h_1a74537517bf20d5af522adc27a07dff0ba43009deba0aecdd959693a524534456d" kind="enumvalue"><name>max_brightness_levels</name></member>
+    <member refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857" kind="enum"><name>eSensor</name></member>
+    <member refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af7faad7c57f8e1d49eac1fd1ccf83c8c" kind="enumvalue"><name>battery</name></member>
+    <member refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a6afd62f6c5a27893b2b94c2854f8514d" kind="enumvalue"><name>brightness</name></member>
+    <member refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af78a0094726cca324b69464b475ed069" kind="enumvalue"><name>humidity</name></member>
+    <member refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9e67510d0af57b4c4e7f33f88a9a18f8" kind="enumvalue"><name>noise</name></member>
+    <member refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857abe4c82e1f6065d36e7cf19c7bbc00005" kind="enumvalue"><name>personsPassed</name></member>
+    <member refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9922a43d37bee3212593f77ce4ec82f3" kind="enumvalue"><name>temperature</name></member>
+    <member refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c" kind="enumvalue"><name>max_sensors</name></member>
+    <member refid="defines_8h_1a3a6251b9cae8d7da3cec393b23df3228" kind="variable"><name>request_str</name></member>
+    <member refid="defines_8h_1aa66266408de980f8f70d74c36e24ef9c" kind="variable"><name>brightness_str</name></member>
+    <member refid="defines_8h_1aa1c2df433b41481f1dee5aa6519df290" kind="variable"><name>sensor_str</name></member>
+  </compound>
+  <compound refid="net_8c" kind="file"><name>net.c</name>
+    <member refid="net_8c_1a5648e23ffc8afb543a41ca08b252e2c6" kind="function"><name>readSocket</name></member>
+    <member refid="net_8c_1adb296d69ad81a26650f6478eb63c78bc" kind="function"><name>writeSocket</name></member>
+    <member refid="net_8c_1a7e8fd0c8a9ece620618794b18387aa99" kind="function"><name>connectToServer</name></member>
+  </compound>
+  <compound refid="net_8h" kind="file"><name>net.h</name>
+    <member refid="net_8h_1aebe97308412c97831f443fb38699c946" kind="define"><name>PROTOCOL_TYPE</name></member>
+    <member refid="net_8h_1a5648e23ffc8afb543a41ca08b252e2c6" kind="function"><name>readSocket</name></member>
+    <member refid="net_8h_1adb296d69ad81a26650f6478eb63c78bc" kind="function"><name>writeSocket</name></member>
+    <member refid="net_8h_1a7e8fd0c8a9ece620618794b18387aa99" kind="function"><name>connectToServer</name></member>
+  </compound>
+  <compound refid="sensors_8c" kind="file"><name>sensors.c</name>
+    <member refid="sensors_8c_1a6c45ab1ab93ccb893b64ed84e091ffd5" kind="variable"><name>readings</name></member>
+    <member refid="sensors_8c_1a06f41875c9c55c4e531cc8b25fb9b427" kind="function"><name>getSensorReadingStr</name></member>
+    <member refid="sensors_8c_1a17189321c81ebc3407443f7a4cb96c3e" kind="function"><name>newMeasurement</name></member>
+    <member refid="sensors_8c_1afa2662e08e833375e2b6d8d713d0d7a3" kind="function"><name>generateMeasurements</name></member>
+  </compound>
+  <compound refid="sensors_8h" kind="file"><name>sensors.h</name>
+    <member refid="sensors_8h_1a06f41875c9c55c4e531cc8b25fb9b427" kind="function"><name>getSensorReadingStr</name></member>
+    <member refid="sensors_8h_1a17189321c81ebc3407443f7a4cb96c3e" kind="function"><name>newMeasurement</name></member>
+    <member refid="sensors_8h_1afa2662e08e833375e2b6d8d713d0d7a3" kind="function"><name>generateMeasurements</name></member>
+  </compound>
+  <compound refid="xml_8c" kind="file"><name>xml.c</name>
+    <member refid="xml_8c_1a6c45ab1ab93ccb893b64ed84e091ffd5" kind="variable"><name>readings</name></member>
+    <member refid="xml_8c_1a397bd0803103d9d6a9ba58ada6845307" kind="function"><name>buildReplyXML</name></member>
+    <member refid="xml_8c_1a40c4d4b938104b27b9d740ae5fcc0640" kind="function"><name>buildRequestXML</name></member>
+    <member refid="xml_8c_1a5a10276da8ff70ec0f44dfdbbda8e8b3" kind="function"><name>writeConfig</name></member>
+    <member refid="xml_8c_1ac88a4185c09ac0664d9d747f99a784c6" kind="function"><name>readConfig</name></member>
+  </compound>
+  <compound refid="xml_8h" kind="file"><name>xml.h</name>
+    <member refid="xml_8h_1a397bd0803103d9d6a9ba58ada6845307" kind="function"><name>buildReplyXML</name></member>
+    <member refid="xml_8h_1a40c4d4b938104b27b9d740ae5fcc0640" kind="function"><name>buildRequestXML</name></member>
+    <member refid="xml_8h_1a5a10276da8ff70ec0f44dfdbbda8e8b3" kind="function"><name>writeConfig</name></member>
+    <member refid="xml_8h_1ac88a4185c09ac0664d9d747f99a784c6" kind="function"><name>readConfig</name></member>
+  </compound>
+  <compound refid="server_8c" kind="file"><name>server.c</name>
+    <member refid="server_8c_1aee1132b8a79e9a6dd0d19a93f7133389" kind="define"><name>SRV_PORT</name></member>
+    <member refid="server_8c_1ab946e2e7f7679350627acfded8e2658b" kind="define"><name>TEST</name></member>
+    <member refid="server_8c_1adeadf7cb6916a10c7142ce7d265ab32a" kind="variable"><name>socket_desc</name></member>
+    <member refid="server_8c_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+    <member refid="server_8c_1a32102343afef8efa4719cc354367b5c4" kind="function"><name>connection_handler</name></member>
+    <member refid="server_8c_1a4a26b396e509e6a65eae2d72ac5a190a" kind="function"><name>exitHandler</name></member>
+    <member refid="server_8c_1ab6bb131db1ab53e88dd407d39e989a06" kind="function"><name>shutdownHandler</name></member>
+  </compound>
+  <compound refid="server_8h" kind="file"><name>server.h</name>
+    <member refid="server_8h_1a99c88edc68ebbf9b09eabca690a3b515" kind="function"><name>connection_handler</name></member>
+    <member refid="server_8h_1ab6bb131db1ab53e88dd407d39e989a06" kind="function"><name>shutdownHandler</name></member>
+    <member refid="server_8h_1a4a26b396e509e6a65eae2d72ac5a190a" kind="function"><name>exitHandler</name></member>
+  </compound>
+  <compound refid="dir_db3a54907829b36871118d03417739cd" kind="dir"><name>client</name>
+  </compound>
+  <compound refid="dir_bdd9a5d540de89e9fe90efdfc6973a4f" kind="dir"><name>common</name>
+  </compound>
+  <compound refid="dir_41e1742e44e2de38b3bc91f993fed282" kind="dir"><name>server</name>
+  </compound>
+  <compound refid="dir_a063914ab482288b7b0e1b2fca86158c" kind="dir"><name>server/src</name>
+  </compound>
+  <compound refid="dir_b565d458ba0ce2faccd0ea2cd60c04eb" kind="dir"><name>client/src</name>
+  </compound>
+  <compound refid="dir_8dbb25af29c957154f08a56a9c6e06fa" kind="dir"><name>server/src/tests</name>
+  </compound>
+  <compound refid="dir_de811b7ffca0e00882b9157b28f28080" kind="dir"><name>client/src/tests</name>
+  </compound>
+</doxygenindex>

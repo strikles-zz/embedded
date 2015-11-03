@@ -1,0 +1,74 @@
+\section{common/net.c File Reference}
+\label{net_8c}\index{common/net.\-c@{common/net.\-c}}
+
+
+networking common net definitions  
+
+
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$netdb.\-h$>$}\\*
+{\ttfamily \#include $<$arpa/inet.\-h$>$}\\*
+{\ttfamily \#include $<$sys/socket.\-h$>$}\\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}net.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf read\-Socket} (int sock, char recvline[$\,$])
+\item 
+int {\bf write\-Socket} (int sock, char sendline[$\,$])
+\item 
+int {\bf connect\-To\-Server} (void $\ast$sock\-\_\-desc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+networking common net definitions \begin{DoxyAuthor}{Author}
+Claudio Neto
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+3/11/2015 
+\end{DoxyDate}
+
+
+Definition in file {\bf net.\-c}.
+
+
+
+\subsection{Function Documentation}
+\index{net.\-c@{net.\-c}!connect\-To\-Server@{connect\-To\-Server}}
+\index{connect\-To\-Server@{connect\-To\-Server}!net.c@{net.\-c}}
+\subsubsection[{connect\-To\-Server}]{\setlength{\rightskip}{0pt plus 5cm}int connect\-To\-Server (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{sock\-\_\-desc}
+\end{DoxyParamCaption}
+)}\label{net_8c_a7e8fd0c8a9ece620618794b18387aa99}
+Connect to Sever 
+
+Definition at line 85 of file net.\-c.
+
+\index{net.\-c@{net.\-c}!read\-Socket@{read\-Socket}}
+\index{read\-Socket@{read\-Socket}!net.c@{net.\-c}}
+\subsubsection[{read\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}int read\-Socket (
+\begin{DoxyParamCaption}
+\item[{int}]{sock, }
+\item[{char}]{recvline[$\,$]}
+\end{DoxyParamCaption}
+)}\label{net_8c_a5648e23ffc8afb543a41ca08b252e2c6}
+Read from Socket 
+
+Definition at line 24 of file net.\-c.
+
+\index{net.\-c@{net.\-c}!write\-Socket@{write\-Socket}}
+\index{write\-Socket@{write\-Socket}!net.c@{net.\-c}}
+\subsubsection[{write\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}int write\-Socket (
+\begin{DoxyParamCaption}
+\item[{int}]{sock, }
+\item[{char}]{sendline[$\,$]}
+\end{DoxyParamCaption}
+)}\label{net_8c_adb296d69ad81a26650f6478eb63c78bc}
+Write to socket 
+
+Definition at line 58 of file net.\-c.
+

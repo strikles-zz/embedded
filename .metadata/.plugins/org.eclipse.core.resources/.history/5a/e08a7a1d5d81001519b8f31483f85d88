@@ -1,0 +1,15 @@
+/*
+ * net.c
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+
+uint16_t readSocket(char buffer[])
+{
+}
+
+uint16_t writeSocket(char buffer[])
+{
+}

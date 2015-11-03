@@ -1,0 +1,76 @@
+.TH "common/sensors.c" 3 "Tue Nov 3 2015" "Version 0.0.1" "My Project" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+common/sensors.c \- 
+.PP
+sensors common mock sensors definitions  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'sensors\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "uint16_t \fBgetSensorReadingStr\fP (\fBeSensor\fP s, char buffer[])"
+.br
+.ti -1c
+.RI "int \fBnewMeasurement\fP (\fBeSensor\fP s)"
+.br
+.ti -1c
+.RI "uint16_t \fBgenerateMeasurements\fP (void)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "volatile \fBReading_t\fP \fBreadings\fP [\fBmax_sensors\fP]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+sensors common mock sensors definitions 
+
+
+.PP
+\fBAuthor:\fP
+.RS 4
+Claudio Neto
+.RE
+.PP
+\fBDate:\fP
+.RS 4
+3/11/2015 
+.RE
+.PP
+
+.PP
+Definition in file \fBsensors\&.c\fP\&.
+.SH "Function Documentation"
+.PP 
+.SS "uint16_t generateMeasurements (void)"
+helper - loop to generate measurements 
+.PP
+Definition at line 70 of file sensors\&.c\&.
+.SS "uint16_t getSensorReadingStr (\fBeSensor\fPs, charbuffer[])"
+helper - gets a measurement 
+.PP
+Definition at line 18 of file sensors\&.c\&.
+.SS "int newMeasurement (\fBeSensor\fPs)"
+helper - sets a random measurement value 
+.PP
+Definition at line 43 of file sensors\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "volatile \fBReading_t\fP readings[\fBmax_sensors\fP]"
+
+.PP
+Definition at line 13 of file sensors\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for My Project from the source code\&.

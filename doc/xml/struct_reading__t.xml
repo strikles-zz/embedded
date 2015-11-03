@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_reading__t" kind="struct" prot="public">
+    <compoundname>Reading_t</compoundname>
+    <includes refid="defines_8h" local="no">defines.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_reading__t_1ac4f474c82e82cbb89ca7c36dd52be0ed" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="67" column="1" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="sensors_8h_1a17189321c81ebc3407443f7a4cb96c3e" compoundref="sensors_8c" startline="43" endline="65">newMeasurement</referencedby>
+        <referencedby refid="sensors_8h_1afa2662e08e833375e2b6d8d713d0d7a3" compoundref="sensors_8c" startline="70" endline="81">generateMeasurements</referencedby>
+        <referencedby refid="xml_8h_1a397bd0803103d9d6a9ba58ada6845307" compoundref="xml_8c" startline="22" endline="112">buildReplyXML</referencedby>
+        <referencedby refid="xml_8h_1ac88a4185c09ac0664d9d747f99a784c6" compoundref="xml_8c" startline="226" endline="266">readConfig</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_reading__t_1a4bd3978f9fa83a0e08225dca54a00eb6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int elapsed</definition>
+        <argsstring></argsstring>
+        <name>elapsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="68" column="1" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="sensors_8h_1afa2662e08e833375e2b6d8d713d0d7a3" compoundref="sensors_8c" startline="70" endline="81">generateMeasurements</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_reading__t_1ae0c690118932b32ef40a74bb6a259acd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int interval</definition>
+        <argsstring></argsstring>
+        <name>interval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="69" column="1" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="sensors_8h_1afa2662e08e833375e2b6d8d713d0d7a3" compoundref="sensors_8c" startline="70" endline="81">generateMeasurements</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/strikles/workspace/common/defines.h" line="66" column="1" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="66" bodyend="71"/>
+    <listofallmembers>
+      <member refid="struct_reading__t_1a4bd3978f9fa83a0e08225dca54a00eb6" prot="public" virt="non-virtual"><scope>Reading_t</scope><name>elapsed</name></member>
+      <member refid="struct_reading__t_1ae0c690118932b32ef40a74bb6a259acd" prot="public" virt="non-virtual"><scope>Reading_t</scope><name>interval</name></member>
+      <member refid="struct_reading__t_1ac4f474c82e82cbb89ca7c36dd52be0ed" prot="public" virt="non-virtual"><scope>Reading_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

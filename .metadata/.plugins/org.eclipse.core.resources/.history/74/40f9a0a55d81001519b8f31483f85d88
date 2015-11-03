@@ -1,0 +1,55 @@
+/*
+ * net.c
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+
+uint16_t readSocket(int* sock, char buffer[])
+{
+	bzero(buffer, MSG_MAX_LEN);
+	char* pBuf = buffer;
+	int bytesLeft = sizeof(buffer) - sizeof(char);
+
+	while(bytesLeft > 0)
+	{
+	    int n = read(sock, pBuf, bytesLeft);
+	    if (n < 0)
+	    {
+	        error("ERROR reading from socket");
+	        break;
+	    }
+	    if(n == 0)
+	    {
+	        error("peer shutted down");
+	        break;
+	    }
+	    pBuf += n;
+	    bytesLeft -= n;
+	}
+}
+
+uint16_t writeSocket(int* sock, char buffer[])
+{
+	bzero(buffer, MSG_MAX_LEN);
+	char* pBuf = buffer;
+	int bytesLeft = sizeof(buffer) - sizeof(char);
+
+	while(bytesLeft > 0)
+	{
+	    int n = write(sock, pBuf, bytesLeft);
+	    if (n < 0)
+	    {
+	        error("ERROR reading from socket");
+	        break;
+	    }
+	    if(n == 0)
+	    {
+	        error("peer shutted down");
+	        break;
+	    }
+	    pBuf += n;
+	    bytesLeft -= n;
+	}
+}

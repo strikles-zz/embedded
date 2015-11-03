@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="defines_8h" kind="file">
+    <compoundname>defines.h</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includedby refid="defines_8c" local="yes">common/defines.c</includedby>
+    <includedby refid="net_8h" local="yes">common/net.h</includedby>
+    <includedby refid="sensors_8h" local="yes">common/sensors.h</includedby>
+    <includedby refid="xml_8c" local="yes">common/xml.c</includedby>
+    <includedby refid="xml_8h" local="yes">common/xml.h</includedby>
+    <incdepgraph>
+      <node id="51">
+        <label>stdint.h</label>
+      </node>
+      <node id="50">
+        <label>stdlib.h</label>
+      </node>
+      <node id="49">
+        <label>common/defines.h</label>
+        <link refid="defines.h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>string.h</label>
+      </node>
+      <node id="52">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="57">
+        <label>client/src/client.c</label>
+        <link refid="client_8c"/>
+      </node>
+      <node id="61">
+        <label>common/sensors.c</label>
+        <link refid="sensors_8c"/>
+      </node>
+      <node id="60">
+        <label>common/sensors.h</label>
+        <link refid="sensors_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>common/defines.c</label>
+        <link refid="defines_8c"/>
+      </node>
+      <node id="54">
+        <label>common/defines.h</label>
+        <link refid="defines.h"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>common/net.c</label>
+        <link refid="net_8c"/>
+      </node>
+      <node id="56">
+        <label>common/net.h</label>
+        <link refid="net_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>common/xml.c</label>
+        <link refid="xml_8c"/>
+      </node>
+      <node id="63">
+        <label>common/xml.h</label>
+        <link refid="xml_8h"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>server/src/server.c</label>
+        <link refid="server_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_reading__t" prot="public">Reading_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="defines_8h_1a51d90ea93d4b55e086cb490f7478e684" prot="public" static="no">
+        <name>MAX_MSG_LEN</name>
+        <initializer>1024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="14" column="9" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="client_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="client_8c" startline="31" endline="98">main</referencedby>
+        <referencedby refid="net_8h_1a5648e23ffc8afb543a41ca08b252e2c6" compoundref="net_8c" startline="24" endline="53">readSocket</referencedby>
+        <referencedby refid="net_8h_1adb296d69ad81a26650f6478eb63c78bc" compoundref="net_8c" startline="58" endline="80">writeSocket</referencedby>
+        <referencedby refid="xml_8h_1a397bd0803103d9d6a9ba58ada6845307" compoundref="xml_8c" startline="22" endline="112">buildReplyXML</referencedby>
+        <referencedby refid="xml_8h_1a40c4d4b938104b27b9d740ae5fcc0640" compoundref="xml_8c" startline="117" endline="193">buildRequestXML</referencedby>
+        <referencedby refid="xml_8h_1a5a10276da8ff70ec0f44dfdbbda8e8b3" compoundref="xml_8c" startline="198" endline="221">writeConfig</referencedby>
+        <referencedby refid="server_8h_1a99c88edc68ebbf9b09eabca690a3b515" compoundref="server_8c" startline="113" endline="164">connection_handler</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="defines_8h_1aee1132b8a79e9a6dd0d19a93f7133389" prot="public" static="no">
+        <name>SRV_PORT</name>
+        <initializer>6423</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="15" column="9" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="client_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="client_8c" startline="31" endline="98">main</referencedby>
+        <referencedby refid="net_8h_1a7e8fd0c8a9ece620618794b18387aa99" compoundref="net_8c" startline="85" endline="101">connectToServer</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="defines_8h_1ad43b436f38b6543a54dc74559fe7be11" prot="public" static="no">
+        <name>SRV_ADDR</name>
+        <initializer>&quot;127.0.0.1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="16" column="9" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="16" bodyend="-1"/>
+        <referencedby refid="client_8c_1a3c04138a5bfe5d72780bb7e82a18e627" compoundref="client_8c" startline="31" endline="98">main</referencedby>
+        <referencedby refid="net_8h_1a7e8fd0c8a9ece620618794b18387aa99" compoundref="net_8c" startline="85" endline="101">connectToServer</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="defines_8h_1a380ce63b151a8118e69bcaa34f731958" prot="public" static="no">
+        <name>eBool</name>
+        <enumvalue id="defines_8h_1a380ce63b151a8118e69bcaa34f731958a08f175a5505a10b9ed657defeb050e4b" prot="public">
+          <name>true</name>
+          <briefdescription>
+<para>true </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1a380ce63b151a8118e69bcaa34f731958ae9de385ef6fe9bf3360d1038396b884c" prot="public">
+          <name>false</name>
+          <briefdescription>
+<para>false </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>true - false enum </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="26" column="1" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="enum" id="defines_8h_1ab485e71594add692a01e9b87963e0e34" prot="public" static="no">
+        <name>eRequest</name>
+        <enumvalue id="defines_8h_1ab485e71594add692a01e9b87963e0e34a983aedd7cd1f52c07d1e8e4804287cef" prot="public">
+          <name>configure</name>
+          <briefdescription>
+<para>generate configuration xml </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1ab485e71594add692a01e9b87963e0e34af410ad0732b2aec7b579eb0084a2a1fd" prot="public">
+          <name>retrieve</name>
+          <briefdescription>
+<para>retrieve data </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1ab485e71594add692a01e9b87963e0e34a15edc24cdf7dea17a43c6c50580eba2b" prot="public">
+          <name>update</name>
+          <briefdescription>
+<para>update data </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>request types </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="34" column="1" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="enum" id="defines_8h_1a74537517bf20d5af522adc27a07dff0b" prot="public" static="no">
+        <name>eBrightness</name>
+        <enumvalue id="defines_8h_1a74537517bf20d5af522adc27a07dff0baa576f04a6a2d8acc5c52fe798875dc07" prot="public">
+          <name>dark</name>
+          <briefdescription>
+<para>dark </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1a74537517bf20d5af522adc27a07dff0bae478d4d7f90177e87ed05369ad732b25" prot="public">
+          <name>average</name>
+          <briefdescription>
+<para>average </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1a74537517bf20d5af522adc27a07dff0baadf74e9a8193f92c453d072e4b3584a1" prot="public">
+          <name>bright</name>
+          <briefdescription>
+<para>bright </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1a74537517bf20d5af522adc27a07dff0ba43009deba0aecdd959693a524534456d" prot="public">
+          <name>max_brightness_levels</name>
+          <briefdescription>
+<para>max_brightness_levels </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>brightness levels </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="43" column="1" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="43" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="enum" id="defines_8h_1a176eb2b5c4900db14801860a5d7a0857" prot="public" static="no">
+        <name>eSensor</name>
+        <enumvalue id="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af7faad7c57f8e1d49eac1fd1ccf83c8c" prot="public">
+          <name>battery</name>
+          <briefdescription>
+<para>battery </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a6afd62f6c5a27893b2b94c2854f8514d" prot="public">
+          <name>brightness</name>
+          <briefdescription>
+<para>brightness </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af78a0094726cca324b69464b475ed069" prot="public">
+          <name>humidity</name>
+          <briefdescription>
+<para>humidity </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9e67510d0af57b4c4e7f33f88a9a18f8" prot="public">
+          <name>noise</name>
+          <briefdescription>
+<para>noise </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1a176eb2b5c4900db14801860a5d7a0857abe4c82e1f6065d36e7cf19c7bbc00005" prot="public">
+          <name>personsPassed</name>
+          <briefdescription>
+<para>personsPassed </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9922a43d37bee3212593f77ce4ec82f3" prot="public">
+          <name>temperature</name>
+          <briefdescription>
+<para>temperature </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c" prot="public">
+          <name>max_sensors</name>
+          <briefdescription>
+<para>max_sensors </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>the various mock sensors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="53" column="1" bodyfile="/home/strikles/workspace/common/defines.h" bodystart="53" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="defines_8h_1a3a6251b9cae8d7da3cec393b23df3228" prot="public" static="no" mutable="no">
+        <type>const char const *</type>
+        <definition>const char const* request_str[]</definition>
+        <argsstring>[]</argsstring>
+        <name>request_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="73" column="1" bodyfile="/home/strikles/workspace/common/defines.c" bodystart="13" bodyend="-1"/>
+        <referencedby refid="xml_8h_1a40c4d4b938104b27b9d740ae5fcc0640" compoundref="xml_8c" startline="117" endline="193">buildRequestXML</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="defines_8h_1aa66266408de980f8f70d74c36e24ef9c" prot="public" static="no" mutable="no">
+        <type>const char const *</type>
+        <definition>const char const* brightness_str[]</definition>
+        <argsstring>[]</argsstring>
+        <name>brightness_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="74" column="1" bodyfile="/home/strikles/workspace/common/defines.c" bodystart="19" bodyend="-1"/>
+        <referencedby refid="sensors_8h_1a06f41875c9c55c4e531cc8b25fb9b427" compoundref="sensors_8c" startline="18" endline="38">getSensorReadingStr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="defines_8h_1aa1c2df433b41481f1dee5aa6519df290" prot="public" static="no" mutable="no">
+        <type>const char const *</type>
+        <definition>const char const* sensor_str[]</definition>
+        <argsstring>[]</argsstring>
+        <name>sensor_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.h" line="75" column="1" bodyfile="/home/strikles/workspace/common/defines.c" bodystart="26" bodyend="-1"/>
+        <referencedby refid="xml_8h_1a397bd0803103d9d6a9ba58ada6845307" compoundref="xml_8c" startline="22" endline="112">buildReplyXML</referencedby>
+        <referencedby refid="xml_8h_1a40c4d4b938104b27b9d740ae5fcc0640" compoundref="xml_8c" startline="117" endline="193">buildRequestXML</referencedby>
+        <referencedby refid="xml_8h_1ac88a4185c09ac0664d9d747f99a784c6" compoundref="xml_8c" startline="226" endline="266">readConfig</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>defines common definitions </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Claudio Neto</para></simplesect>
+<simplesect kind="date"><para>3/11/2015 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#ifndef<sp/>DEFINES_H_</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEFINES_H_</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="defines_8h_1a51d90ea93d4b55e086cb490f7478e684" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_MSG_LEN<sp/>1024</highlight></codeline>
+<codeline lineno="15" refid="defines_8h_1aee1132b8a79e9a6dd0d19a93f7133389" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SRV_PORT<sp/>6423</highlight></codeline>
+<codeline lineno="16" refid="defines_8h_1ad43b436f38b6543a54dc74559fe7be11" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SRV_ADDR<sp/>&quot;127.0.0.1&quot;</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="defines_8h_1a380ce63b151a8118e69bcaa34f731958" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27" refid="defines_8h_1a380ce63b151a8118e69bcaa34f731958a08f175a5505a10b9ed657defeb050e4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="28" refid="defines_8h_1a380ce63b151a8118e69bcaa34f731958ae9de385ef6fe9bf3360d1038396b884c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}<sp/><ref refid="defines_8h_1a380ce63b151a8118e69bcaa34f731958" kindref="member">eBool</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="defines_8h_1ab485e71594add692a01e9b87963e0e34" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="35" refid="defines_8h_1ab485e71594add692a01e9b87963e0e34a983aedd7cd1f52c07d1e8e4804287cef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1ab485e71594add692a01e9b87963e0e34a983aedd7cd1f52c07d1e8e4804287cef" kindref="member">configure</ref>,</highlight></codeline>
+<codeline lineno="36" refid="defines_8h_1ab485e71594add692a01e9b87963e0e34af410ad0732b2aec7b579eb0084a2a1fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1ab485e71594add692a01e9b87963e0e34af410ad0732b2aec7b579eb0084a2a1fd" kindref="member">retrieve</ref>,<sp/></highlight></codeline>
+<codeline lineno="37" refid="defines_8h_1ab485e71594add692a01e9b87963e0e34a15edc24cdf7dea17a43c6c50580eba2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1ab485e71594add692a01e9b87963e0e34a15edc24cdf7dea17a43c6c50580eba2b" kindref="member">update</ref><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/><ref refid="defines_8h_1ab485e71594add692a01e9b87963e0e34" kindref="member">eRequest</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="defines_8h_1a74537517bf20d5af522adc27a07dff0b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="44" refid="defines_8h_1a74537517bf20d5af522adc27a07dff0baa576f04a6a2d8acc5c52fe798875dc07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a74537517bf20d5af522adc27a07dff0baa576f04a6a2d8acc5c52fe798875dc07" kindref="member">dark</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="defines_8h_1a74537517bf20d5af522adc27a07dff0bae478d4d7f90177e87ed05369ad732b25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a74537517bf20d5af522adc27a07dff0bae478d4d7f90177e87ed05369ad732b25" kindref="member">average</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="defines_8h_1a74537517bf20d5af522adc27a07dff0baadf74e9a8193f92c453d072e4b3584a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a74537517bf20d5af522adc27a07dff0baadf74e9a8193f92c453d072e4b3584a1" kindref="member">bright</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="defines_8h_1a74537517bf20d5af522adc27a07dff0ba43009deba0aecdd959693a524534456d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a74537517bf20d5af522adc27a07dff0ba43009deba0aecdd959693a524534456d" kindref="member">max_brightness_levels</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/><sp/><ref refid="defines_8h_1a74537517bf20d5af522adc27a07dff0b" kindref="member">eBrightness</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="54" refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af7faad7c57f8e1d49eac1fd1ccf83c8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af7faad7c57f8e1d49eac1fd1ccf83c8c" kindref="member">battery</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a6afd62f6c5a27893b2b94c2854f8514d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a6afd62f6c5a27893b2b94c2854f8514d" kindref="member">brightness</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af78a0094726cca324b69464b475ed069" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af78a0094726cca324b69464b475ed069" kindref="member">humidity</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9e67510d0af57b4c4e7f33f88a9a18f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9e67510d0af57b4c4e7f33f88a9a18f8" kindref="member">noise</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857abe4c82e1f6065d36e7cf19c7bbc00005" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857abe4c82e1f6065d36e7cf19c7bbc00005" kindref="member">personsPassed</ref>,</highlight></codeline>
+<codeline lineno="59" refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9922a43d37bee3212593f77ce4ec82f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9922a43d37bee3212593f77ce4ec82f3" kindref="member">temperature</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c" kindref="member">max_sensors</ref><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}<sp/><ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857" kindref="member">eSensor</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="struct_reading__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67" refid="struct_reading__t_1ac4f474c82e82cbb89ca7c36dd52be0ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_reading__t_1ac4f474c82e82cbb89ca7c36dd52be0ed" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="68" refid="struct_reading__t_1a4bd3978f9fa83a0e08225dca54a00eb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_reading__t_1a4bd3978f9fa83a0e08225dca54a00eb6" kindref="member">elapsed</ref>;</highlight></codeline>
+<codeline lineno="69" refid="struct_reading__t_1ae0c690118932b32ef40a74bb6a259acd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_reading__t_1ae0c690118932b32ef40a74bb6a259acd" kindref="member">interval</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}<sp/><ref refid="struct_reading__t" kindref="compound">Reading_t</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><ref refid="defines_8h_1a3a6251b9cae8d7da3cec393b23df3228" kindref="member">request_str</ref>[];</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><ref refid="defines_8h_1aa66266408de980f8f70d74c36e24ef9c" kindref="member">brightness_str</ref>[];</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><ref refid="defines_8h_1aa1c2df433b41481f1dee5aa6519df290" kindref="member">sensor_str</ref>[];</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEFINES_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/strikles/workspace/common/defines.h"/>
+  </compounddef>
+</doxygen>

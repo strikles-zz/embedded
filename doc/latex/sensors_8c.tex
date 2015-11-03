@@ -1,0 +1,82 @@
+\section{common/sensors.c File Reference}
+\label{sensors_8c}\index{common/sensors.\-c@{common/sensors.\-c}}
+
+
+sensors common mock sensors definitions  
+
+
+{\ttfamily \#include \char`\"{}sensors.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\-\_\-t {\bf get\-Sensor\-Reading\-Str} ({\bf e\-Sensor} s, char buffer[$\,$])
+\item 
+int {\bf new\-Measurement} ({\bf e\-Sensor} s)
+\item 
+uint16\-\_\-t {\bf generate\-Measurements} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile {\bf Reading\-\_\-t} {\bf readings} [{\bf max\-\_\-sensors}]
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+sensors common mock sensors definitions \begin{DoxyAuthor}{Author}
+Claudio Neto
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+3/11/2015 
+\end{DoxyDate}
+
+
+Definition in file {\bf sensors.\-c}.
+
+
+
+\subsection{Function Documentation}
+\index{sensors.\-c@{sensors.\-c}!generate\-Measurements@{generate\-Measurements}}
+\index{generate\-Measurements@{generate\-Measurements}!sensors.c@{sensors.\-c}}
+\subsubsection[{generate\-Measurements}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t generate\-Measurements (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{sensors_8c_afa2662e08e833375e2b6d8d713d0d7a3}
+helper -\/ loop to generate measurements 
+
+Definition at line 70 of file sensors.\-c.
+
+\index{sensors.\-c@{sensors.\-c}!get\-Sensor\-Reading\-Str@{get\-Sensor\-Reading\-Str}}
+\index{get\-Sensor\-Reading\-Str@{get\-Sensor\-Reading\-Str}!sensors.c@{sensors.\-c}}
+\subsubsection[{get\-Sensor\-Reading\-Str}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t get\-Sensor\-Reading\-Str (
+\begin{DoxyParamCaption}
+\item[{{\bf e\-Sensor}}]{s, }
+\item[{char}]{buffer[$\,$]}
+\end{DoxyParamCaption}
+)}\label{sensors_8c_a06f41875c9c55c4e531cc8b25fb9b427}
+helper -\/ gets a measurement 
+
+Definition at line 18 of file sensors.\-c.
+
+\index{sensors.\-c@{sensors.\-c}!new\-Measurement@{new\-Measurement}}
+\index{new\-Measurement@{new\-Measurement}!sensors.c@{sensors.\-c}}
+\subsubsection[{new\-Measurement}]{\setlength{\rightskip}{0pt plus 5cm}int new\-Measurement (
+\begin{DoxyParamCaption}
+\item[{{\bf e\-Sensor}}]{s}
+\end{DoxyParamCaption}
+)}\label{sensors_8c_a17189321c81ebc3407443f7a4cb96c3e}
+helper -\/ sets a random measurement value 
+
+Definition at line 43 of file sensors.\-c.
+
+
+
+\subsection{Variable Documentation}
+\index{sensors.\-c@{sensors.\-c}!readings@{readings}}
+\index{readings@{readings}!sensors.c@{sensors.\-c}}
+\subsubsection[{readings}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf Reading\-\_\-t} readings[{\bf max\-\_\-sensors}]}\label{sensors_8c_a6c45ab1ab93ccb893b64ed84e091ffd5}
+
+
+Definition at line 13 of file sensors.\-c.
+

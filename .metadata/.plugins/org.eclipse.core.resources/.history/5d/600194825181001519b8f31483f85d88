@@ -1,0 +1,63 @@
+/*
+ * defines.h
+ *
+ *  Created on: Nov 2, 2015
+ *      Author: strikles
+ */
+
+#ifndef DEFINES_H_
+#define DEFINES_H_
+
+#define MAX_MSG_LEN 1048
+#define SRV_PORT 6423
+#define SRV_ADDR "127.0.0.1"
+
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "defines.h"
+
+typedef enum {
+	retrieve,
+	update
+} eRequest;
+
+// generic
+typedef enum {
+	true,
+	false
+} eBool;
+
+// brightness
+typedef enum {
+	dark,
+	average,
+	bright,
+	max_brightness_levels
+}  eBrightness;
+
+// sensors
+typedef enum {
+	battery,
+	brightness,
+	humidity,
+	noise,
+	personsPassed,
+	temperature,
+	max_sensors
+} eSensor;
+
+typedef struct {
+	int value;
+	int elapsed;
+	int interval;
+
+} Reading_t;
+
+extern const char* request_str;
+extern const char* brightness_str;
+extern const char* sensor_str;
+
+#endif /* DEFINES_H_ */

@@ -1,0 +1,59 @@
+16:44:42 **** Build of configuration Debug for project client ****
+make all 
+Building file: ../src/tests/test.c
+Invoking: GCC C Compiler
+gcc -I"/home/strikles/workspace/common" -I"/home/strikles/workspace/ezxml" -I"/home/strikles/workspace/Unity-master/src" -I"/home/strikles/workspace/CMock-master/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/tests/test.d" -MT"src/tests/test.o" -o "src/tests/test.o" "../src/tests/test.c"
+Finished building: ../src/tests/test.c
+ 
+Building file: ../src/client.c
+Invoking: GCC C Compiler
+gcc -I"/home/strikles/workspace/common" -I"/home/strikles/workspace/ezxml" -I"/home/strikles/workspace/Unity-master/src" -I"/home/strikles/workspace/CMock-master/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/client.d" -MT"src/client.o" -o "src/client.o" "../src/client.c"
+Finished building: ../src/client.c
+ 
+Building file: /home/strikles/workspace/ezxml/ezxml.c
+Invoking: GCC C Compiler
+gcc -I"/home/strikles/workspace/common" -I"/home/strikles/workspace/ezxml" -I"/home/strikles/workspace/Unity-master/src" -I"/home/strikles/workspace/CMock-master/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ezxml/ezxml.d" -MT"ezxml/ezxml.o" -o "ezxml/ezxml.o" "/home/strikles/workspace/ezxml/ezxml.c"
+/home/strikles/workspace/ezxml/ezxml.c: In function ‘ezxml_internal_dtd’:
+/home/strikles/workspace/ezxml/ezxml.c:364:26: warning: operation on ‘s’ may be undefined [-Wsequence-point]
+             while (*(n = ++s + strspn(s, EZXML_WS)) && *n != '>') {
+                          ^
+Finished building: /home/strikles/workspace/ezxml/ezxml.c
+ 
+Building file: /home/strikles/workspace/common/defines.c
+Invoking: GCC C Compiler
+gcc -I"/home/strikles/workspace/common" -I"/home/strikles/workspace/ezxml" -I"/home/strikles/workspace/Unity-master/src" -I"/home/strikles/workspace/CMock-master/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"common/defines.d" -MT"common/defines.o" -o "common/defines.o" "/home/strikles/workspace/common/defines.c"
+Finished building: /home/strikles/workspace/common/defines.c
+ 
+Building file: /home/strikles/workspace/common/net.c
+Invoking: GCC C Compiler
+gcc -I"/home/strikles/workspace/common" -I"/home/strikles/workspace/ezxml" -I"/home/strikles/workspace/Unity-master/src" -I"/home/strikles/workspace/CMock-master/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"common/net.d" -MT"common/net.o" -o "common/net.o" "/home/strikles/workspace/common/net.c"
+Finished building: /home/strikles/workspace/common/net.c
+ 
+Building file: /home/strikles/workspace/common/sensors.c
+Invoking: GCC C Compiler
+gcc -I"/home/strikles/workspace/common" -I"/home/strikles/workspace/ezxml" -I"/home/strikles/workspace/Unity-master/src" -I"/home/strikles/workspace/CMock-master/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"common/sensors.d" -MT"common/sensors.o" -o "common/sensors.o" "/home/strikles/workspace/common/sensors.c"
+Finished building: /home/strikles/workspace/common/sensors.c
+ 
+Building file: /home/strikles/workspace/common/xml.c
+Invoking: GCC C Compiler
+gcc -I"/home/strikles/workspace/common" -I"/home/strikles/workspace/ezxml" -I"/home/strikles/workspace/Unity-master/src" -I"/home/strikles/workspace/CMock-master/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"common/xml.d" -MT"common/xml.o" -o "common/xml.o" "/home/strikles/workspace/common/xml.c"
+Finished building: /home/strikles/workspace/common/xml.c
+ 
+Building file: /home/strikles/workspace/Unity-master/src/unity.c
+Invoking: GCC C Compiler
+gcc -I"/home/strikles/workspace/common" -I"/home/strikles/workspace/ezxml" -I"/home/strikles/workspace/Unity-master/src" -I"/home/strikles/workspace/CMock-master/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Unity/unity.d" -MT"Unity/unity.o" -o "Unity/unity.o" "/home/strikles/workspace/Unity-master/src/unity.c"
+Finished building: /home/strikles/workspace/Unity-master/src/unity.c
+ 
+Building file: /home/strikles/workspace/CMock-master/src/cmock.c
+Invoking: GCC C Compiler
+gcc -I"/home/strikles/workspace/common" -I"/home/strikles/workspace/ezxml" -I"/home/strikles/workspace/Unity-master/src" -I"/home/strikles/workspace/CMock-master/src" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CMock/cmock.d" -MT"CMock/cmock.o" -o "CMock/cmock.o" "/home/strikles/workspace/CMock-master/src/cmock.c"
+Finished building: /home/strikles/workspace/CMock-master/src/cmock.c
+ 
+Building target: client
+Invoking: GCC C Linker
+gcc  -o "client"  ./src/tests/test.o  ./src/client.o  ./ezxml/ezxml.o  ./common/defines.o ./common/net.o ./common/sensors.o ./common/xml.o  ./Unity/unity.o  ./CMock/cmock.o   
+Finished building target: client
+ 
+
+16:44:45 Build Finished (took 2s.180ms)
+

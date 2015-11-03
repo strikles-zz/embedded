@@ -1,0 +1,111 @@
+\section{common/net.h File Reference}
+\label{net_8h}\index{common/net.\-h@{common/net.\-h}}
+
+
+networking common net definitions  
+
+
+{\ttfamily \#include \char`\"{}defines.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bf P\-R\-O\-T\-O\-C\-O\-L\-\_\-\-T\-Y\-P\-E}~S\-O\-C\-K\-\_\-\-S\-T\-R\-E\-A\-M
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf read\-Socket} (int sock, char recvline[$\,$])
+\item 
+int {\bf write\-Socket} (int sock, char sendline[$\,$])
+\item 
+int {\bf connect\-To\-Server} (void $\ast$sock\-\_\-desc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+networking common net definitions \begin{DoxyAuthor}{Author}
+Claudio Neto
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+3/11/2015 
+\end{DoxyDate}
+
+
+Definition in file {\bf net.\-h}.
+
+
+
+\subsection{Macro Definition Documentation}
+\index{net.\-h@{net.\-h}!P\-R\-O\-T\-O\-C\-O\-L\-\_\-\-T\-Y\-P\-E@{P\-R\-O\-T\-O\-C\-O\-L\-\_\-\-T\-Y\-P\-E}}
+\index{P\-R\-O\-T\-O\-C\-O\-L\-\_\-\-T\-Y\-P\-E@{P\-R\-O\-T\-O\-C\-O\-L\-\_\-\-T\-Y\-P\-E}!net.h@{net.\-h}}
+\subsubsection[{P\-R\-O\-T\-O\-C\-O\-L\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\-R\-O\-T\-O\-C\-O\-L\-\_\-\-T\-Y\-P\-E~S\-O\-C\-K\-\_\-\-S\-T\-R\-E\-A\-M}\label{net_8h_aebe97308412c97831f443fb38699c946}
+
+
+Definition at line 14 of file net.\-h.
+
+
+
+\subsection{Function Documentation}
+\index{net.\-h@{net.\-h}!connect\-To\-Server@{connect\-To\-Server}}
+\index{connect\-To\-Server@{connect\-To\-Server}!net.h@{net.\-h}}
+\subsubsection[{connect\-To\-Server}]{\setlength{\rightskip}{0pt plus 5cm}int connect\-To\-Server (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{sock\-\_\-desc}
+\end{DoxyParamCaption}
+)}\label{net_8h_a7e8fd0c8a9ece620618794b18387aa99}
+
+\begin{DoxyParams}{Parameters}
+{\em sock\-\_\-desc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+invalid\-\_\-status
+\end{DoxyReturn}
+Connect to Sever 
+
+Definition at line 85 of file net.\-c.
+
+\index{net.\-h@{net.\-h}!read\-Socket@{read\-Socket}}
+\index{read\-Socket@{read\-Socket}!net.h@{net.\-h}}
+\subsubsection[{read\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}int read\-Socket (
+\begin{DoxyParamCaption}
+\item[{int}]{sock, }
+\item[{char}]{recvline[$\,$]}
+\end{DoxyParamCaption}
+)}\label{net_8h_a5648e23ffc8afb543a41ca08b252e2c6}
+
+\begin{DoxyParams}{Parameters}
+{\em sock} & \\
+\hline
+{\em recvline} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+invalid\-\_\-status
+\end{DoxyReturn}
+Read from Socket 
+
+Definition at line 24 of file net.\-c.
+
+\index{net.\-h@{net.\-h}!write\-Socket@{write\-Socket}}
+\index{write\-Socket@{write\-Socket}!net.h@{net.\-h}}
+\subsubsection[{write\-Socket}]{\setlength{\rightskip}{0pt plus 5cm}int write\-Socket (
+\begin{DoxyParamCaption}
+\item[{int}]{sock, }
+\item[{char}]{sendline[$\,$]}
+\end{DoxyParamCaption}
+)}\label{net_8h_adb296d69ad81a26650f6478eb63c78bc}
+
+\begin{DoxyParams}{Parameters}
+{\em sock} & \\
+\hline
+{\em sendline} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+invalid\-\_\-status
+\end{DoxyReturn}
+Write to socket 
+
+Definition at line 58 of file net.\-c.
+

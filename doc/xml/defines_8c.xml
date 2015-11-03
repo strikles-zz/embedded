@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="defines_8c" kind="file">
+    <compoundname>defines.c</compoundname>
+    <includes refid="defines_8h" local="yes">defines.h</includes>
+    <incdepgraph>
+      <node id="45">
+        <label>stdint.h</label>
+      </node>
+      <node id="44">
+        <label>stdlib.h</label>
+      </node>
+      <node id="42">
+        <label>common/defines.c</label>
+        <link refid="defines.c"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>defines.h</label>
+        <link refid="defines_8h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>string.h</label>
+      </node>
+      <node id="46">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="defines_8c_1a3a6251b9cae8d7da3cec393b23df3228" prot="public" static="no" mutable="no">
+        <type>const char const *</type>
+        <definition>const char const* request_str[]</definition>
+        <argsstring>[]</argsstring>
+        <name>request_str</name>
+        <initializer>= {
+	&quot;config&quot;,
+	&quot;<ref refid="defines_8h_1ab485e71594add692a01e9b87963e0e34af410ad0732b2aec7b579eb0084a2a1fd" kindref="member">retrieve</ref>&quot;,
+	&quot;<ref refid="defines_8h_1ab485e71594add692a01e9b87963e0e34a15edc24cdf7dea17a43c6c50580eba2b" kindref="member">update</ref>&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.c" line="13" column="1" bodyfile="/home/strikles/workspace/common/defines.c" bodystart="13" bodyend="-1"/>
+        <referencedby refid="xml_8h_1a40c4d4b938104b27b9d740ae5fcc0640" compoundref="xml_8c" startline="117" endline="193">buildRequestXML</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="defines_8c_1aa66266408de980f8f70d74c36e24ef9c" prot="public" static="no" mutable="no">
+        <type>const char const *</type>
+        <definition>const char const* brightness_str[]</definition>
+        <argsstring>[]</argsstring>
+        <name>brightness_str</name>
+        <initializer>= {
+	&quot;dark&quot;,
+	&quot;<ref refid="defines_8h_1a74537517bf20d5af522adc27a07dff0bae478d4d7f90177e87ed05369ad732b25" kindref="member">average</ref>&quot;,
+	&quot;<ref refid="defines_8h_1a74537517bf20d5af522adc27a07dff0baadf74e9a8193f92c453d072e4b3584a1" kindref="member">bright</ref>&quot;,
+	&quot;max_brightness&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.c" line="19" column="1" bodyfile="/home/strikles/workspace/common/defines.c" bodystart="19" bodyend="-1"/>
+        <referencedby refid="sensors_8h_1a06f41875c9c55c4e531cc8b25fb9b427" compoundref="sensors_8c" startline="18" endline="38">getSensorReadingStr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="defines_8c_1aa1c2df433b41481f1dee5aa6519df290" prot="public" static="no" mutable="no">
+        <type>const char const *</type>
+        <definition>const char const* sensor_str[]</definition>
+        <argsstring>[]</argsstring>
+        <name>sensor_str</name>
+        <initializer>= {
+	&quot;battery&quot;,
+	&quot;<ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a6afd62f6c5a27893b2b94c2854f8514d" kindref="member">brightness</ref>&quot;,
+	&quot;<ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857af78a0094726cca324b69464b475ed069" kindref="member">humidity</ref>&quot;,
+	&quot;<ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9e67510d0af57b4c4e7f33f88a9a18f8" kindref="member">noise</ref>&quot;,
+	&quot;<ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857abe4c82e1f6065d36e7cf19c7bbc00005" kindref="member">personsPassed</ref>&quot;,
+	&quot;<ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a9922a43d37bee3212593f77ce4ec82f3" kindref="member">temperature</ref>&quot;,
+	&quot;<ref refid="defines_8h_1a176eb2b5c4900db14801860a5d7a0857a5acc6f72b8d34c16ce89f1e7b129736c" kindref="member">max_sensors</ref>&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/strikles/workspace/common/defines.c" line="26" column="1" bodyfile="/home/strikles/workspace/common/defines.c" bodystart="26" bodyend="-1"/>
+        <referencedby refid="xml_8h_1a397bd0803103d9d6a9ba58ada6845307" compoundref="xml_8c" startline="22" endline="112">buildReplyXML</referencedby>
+        <referencedby refid="xml_8h_1a40c4d4b938104b27b9d740ae5fcc0640" compoundref="xml_8c" startline="117" endline="193">buildRequestXML</referencedby>
+        <referencedby refid="xml_8h_1ac88a4185c09ac0664d9d747f99a784c6" compoundref="xml_8c" startline="226" endline="266">readConfig</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>defines common definitions </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Claudio Neto</para></simplesect>
+<simplesect kind="date"><para>3/11/2015 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="11"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="defines_8h" kindref="compound">defines.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="defines_8h_1a3a6251b9cae8d7da3cec393b23df3228" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><ref refid="defines_8c_1a3a6251b9cae8d7da3cec393b23df3228" kindref="member">request_str</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;config&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;retrieve&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;update&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="defines_8h_1aa66266408de980f8f70d74c36e24ef9c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><ref refid="defines_8c_1aa66266408de980f8f70d74c36e24ef9c" kindref="member">brightness_str</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;dark&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;average&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;bright&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;max_brightness&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="defines_8h_1aa1c2df433b41481f1dee5aa6519df290" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/><ref refid="defines_8c_1aa1c2df433b41481f1dee5aa6519df290" kindref="member">sensor_str</ref>[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;battery&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;brightness&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;humidity&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;noise&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;personsPassed&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;temperature&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;max_sensors&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="/home/strikles/workspace/common/defines.c"/>
+  </compounddef>
+</doxygen>

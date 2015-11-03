@@ -1,0 +1,11 @@
+20:33:04 **** Incremental Build of configuration Debug for project K46x ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "K46x.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2344	     60	    272	   2676	    a74	K46x.elf
+Finished building: K46x.siz
+ 
+
+20:33:04 Build Finished (took 126ms)
+

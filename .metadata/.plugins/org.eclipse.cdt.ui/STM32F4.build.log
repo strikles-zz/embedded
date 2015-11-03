@@ -1,0 +1,11 @@
+21:46:19 **** Incremental Build of configuration Debug for project STM32F4 ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "STM32F4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8789	    160	    420	   9369	   2499	STM32F4.elf
+Finished building: STM32F4.siz
+ 
+
+21:46:19 Build Finished (took 128ms)
+

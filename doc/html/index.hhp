@@ -1,0 +1,95 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=My Project
+
+[WINDOWS]
+main="My Project","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+client_8c_source.html
+client_8h_source.html
+client_2src_2tests_2test_8c_source.html
+server_2src_2tests_2test_8c_source.html
+client_2src_2tests_2test_8h_source.html
+server_2src_2tests_2test_8h_source.html
+defines_8c_source.html
+defines_8h_source.html
+net_8c_source.html
+net_8h_source.html
+sensors_8c_source.html
+sensors_8h_source.html
+xml_8c_source.html
+xml_8h_source.html
+server_8c_source.html
+server_8h_source.html
+client_8c.html
+client_8h.html
+client_2src_2tests_2test_8c.html
+server_2src_2tests_2test_8c.html
+client_2src_2tests_2test_8h.html
+server_2src_2tests_2test_8h.html
+defines_8c.html
+defines_8h.html
+net_8c.html
+net_8h.html
+sensors_8c.html
+sensors_8h.html
+xml_8c.html
+xml_8h.html
+server_8c.html
+server_8h.html
+struct_reading__t.html
+dir_db3a54907829b36871118d03417739cd.html
+dir_bdd9a5d540de89e9fe90efdfc6973a4f.html
+dir_41e1742e44e2de38b3bc91f993fed282.html
+dir_a063914ab482288b7b0e1b2fca86158c.html
+dir_b565d458ba0ce2faccd0ea2cd60c04eb.html
+dir_8dbb25af29c957154f08a56a9c6e06fa.html
+dir_de811b7ffca0e00882b9157b28f28080.html
+index.html
+annotated.html
+classes.html
+functions.html
+functions_vars.html
+files.html
+globals.html
+globals_func.html
+globals_vars.html
+globals_enum.html
+globals_eval.html
+globals_defs.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+ftv2blank.png
+ftv2doc.png
+ftv2folderclosed.png
+ftv2folderopen.png
+ftv2ns.png
+ftv2mo.png
+ftv2cl.png
+ftv2lastnode.png
+ftv2link.png
+ftv2mlastnode.png
+ftv2mnode.png
+ftv2node.png
+ftv2plastnode.png
+ftv2pnode.png
+ftv2vertline.png
+ftv2splitbar.png
